@@ -1,0 +1,32 @@
+name: Daily Stock Analysis
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install deps
+        run: |
+          pip install anthropic google-auth-oauthlib google-auth-httplib2 google-api-python-client
+      
+      - name: Load credentials
+        env:
+          GMAIL_CREDS: ${{ secrets.GMAIL_CREDENTIALS_JSON }}
+          GMAIL_TOKEN: ${{ secrets.GMAIL_TOKEN_JSON }}
+        run: |
+          echo "$GMAIL_CREDS" > credentials.json
+          echo "$GMAIL_TOKEN" > gmail_token.json
+      
+      - name: Run analysis
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python daily_stock_analysis.py
