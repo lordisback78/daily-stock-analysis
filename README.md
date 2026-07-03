@@ -20,3 +20,21 @@ Modifie le `prompt` dans `daily_stock_analysis.py`.
 ## ⚠️ Avertissement
 
 Informatif uniquement. Pas un conseil en investissement.
+
+---
+
+# ⌚ Garmin Data Sync
+
+Récupère chaque matin (7h UTC) tes données Garmin Connect en lecture seule : entraînements, sommeil, HRV, fréquence cardiaque au repos, body battery, stress, training readiness. Les fichiers sont enregistrés dans `garmin_data/YYYY-MM-DD.json`.
+
+## ⚙️ Setup
+
+Ajoute deux secrets dans Settings → Secrets and variables → Actions :
+- `GARMIN_EMAIL`
+- `GARMIN_PASSWORD`
+
+Le workflow `.github/workflows/garmin_sync.yml` s'occupe du reste.
+
+## 🔧 Pour ajuster l'heure
+
+Modifie le cron dans `.github/workflows/garmin_sync.yml` ligne 6.
