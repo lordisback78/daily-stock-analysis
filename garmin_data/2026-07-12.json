@@ -45,44 +45,7 @@
     "heartRateValues": null
   },
   "hrv": {},
-  "body_battery": [
-    {
-      "date": "2026-07-12",
-      "charged": null,
-      "drained": null,
-      "startTimestampGMT": null,
-      "endTimestampGMT": null,
-      "startTimestampLocal": null,
-      "endTimestampLocal": null,
-      "bodyBatteryValuesArray": [
-        [
-          1783814400001,
-          null
-        ],
-        [
-          1783814400002,
-          null
-        ],
-        [
-          1783814400003,
-          null
-        ],
-        [
-          1783814400004,
-          null
-        ],
-        [
-          1783814400005,
-          null
-        ],
-        [
-          1783814400006,
-          null
-        ]
-      ],
-      "bodyBatteryValueDescriptorDTOList": null
-    }
-  ],
+  "body_battery": [],
   "stress": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-07-12",
@@ -98,6 +61,128 @@
     "stressValuesArray": []
   },
   "training_readiness": [],
-  "activities": [],
+  "activities": [
+    {
+      "activityId": 23568057531,
+      "activityName": "Jouy-en-Josas Cyclisme",
+      "startTimeLocal": "2026-07-12 10:05:15",
+      "startTimeGMT": "2026-07-12 08:05:15",
+      "activityType": {
+        "typeId": 2,
+        "typeKey": "cycling",
+        "parentTypeId": 17,
+        "isHidden": false,
+        "restricted": false,
+        "trimmable": true
+      },
+      "eventType": {
+        "typeId": 9,
+        "typeKey": "uncategorized",
+        "sortOrder": 10
+      },
+      "distance": 40943.25,
+      "duration": 4932.9638671875,
+      "elapsedDuration": 4932.9638671875,
+      "movingDuration": 4889.3179931640625,
+      "elevationGain": 168.5619354248047,
+      "elevationLoss": 167.84011840820312,
+      "averageSpeed": 8.300000190734863,
+      "maxSpeed": 14.397000312805176,
+      "startLatitude": 48.76515090465546,
+      "startLongitude": 2.164854481816292,
+      "hasPolyline": true,
+      "hasImages": false,
+      "ownerId": 86877926,
+      "ownerDisplayName": "d0619bee-6605-42ab-9b53-58eed098da06",
+      "ownerFullName": "Luc",
+      "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/58175172-8c79-4a46-b02d-d75fb82cba59-86877926.png",
+      "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9c4ffeb3-e0c9-48e6-a4fa-a1b701a56ac0-86877926.png",
+      "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/daeb9233-1fda-41d4-a040-e71206c67944-86877926.png",
+      "calories": 1048.0,
+      "averageHR": 157.0,
+      "maxHR": 183.0,
+      "userRoles": [
+        "SCOPE_GOLF_API_READ",
+        "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+        "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+        "SCOPE_ATP_READ",
+        "SCOPE_DIVE_API_WRITE",
+        "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+        "SCOPE_DIVE_API_READ",
+        "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_READ",
+        "SCOPE_CONNECT_WRITE",
+        "SCOPE_COMMUNITY_COURSE_WRITE",
+        "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+        "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+        "SCOPE_MESSAGE_GENERATION_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+        "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+        "SCOPE_ACTIVITY_DETECTION_READ",
+        "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+        "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+        "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+        "SCOPE_CONNECT_READ",
+        "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+        "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+        "SCOPE_ATP_WRITE",
+        "ROLE_CONNECTUSER",
+        "ROLE_FITNESS_USER",
+        "ROLE_WELLNESS_USER",
+        "ROLE_OUTDOOR_USER",
+        "ROLE_MARINE_USER",
+        "ROLE_DIVE_USER",
+        "ROLE_TACX_APP_USER",
+        "ROLE_GARMIN_USER"
+      ],
+      "privacy": {
+        "typeId": 2,
+        "typeKey": "private"
+      },
+      "userPro": false,
+      "hasVideo": false,
+      "timeZoneId": 124,
+      "beginTimestamp": 1783843515000,
+      "sportTypeId": 2,
+      "aerobicTrainingEffect": 4.5,
+      "maxFtp": 200.0,
+      "deviceId": 3319086716,
+      "minElevation": 86.52703094482422,
+      "maxElevation": 183.9927520751953,
+      "avgElevation": 166.32234170706067,
+      "summarizedDiveInfo": {
+        "summarizedDiveGases": []
+      },
+      "maxVerticalSpeed": 1.0023040771484375,
+      "manufacturer": "GARMIN",
+      "locationName": "Jouy-en-Josas",
+      "lapCount": 9,
+      "endLatitude": 48.76670256257057,
+      "endLongitude": 2.159680249169469,
+      "minActivityLapDuration": 134.03599548339844,
+      "splitSummaries": [],
+      "hasSplits": false,
+      "hasIntensityIntervals": false,
+      "hasHeatMap": false,
+      "fastestSplit_40000": 4765.27783203125,
+      "hrTimeInZone_1": 148.584,
+      "hrTimeInZone_2": 433.999,
+      "hrTimeInZone_3": 722.031,
+      "hrTimeInZone_4": 3396.167,
+      "hrTimeInZone_5": 236.543,
+      "endTimeGMT": "2026-07-12 09:27:27",
+      "qualifyingDive": false,
+      "activityUUID": "14ac7d52-4aea-4db4-bed9-21f16025a2ad",
+      "autoCalcCalories": false,
+      "elevationCorrected": true,
+      "atpActivity": false,
+      "favorite": false,
+      "decoDive": false,
+      "pr": false,
+      "parent": false,
+      "purposeful": false,
+      "manualActivity": false
+    }
+  ],
   "resting_heart_rate": null
 }
