@@ -1781,15 +1781,15 @@
       "endTimeGMT": "2026-07-17 18:52:20",
       "qualifyingDive": false,
       "activityUUID": "c4e4bc45-2cc9-4dba-83ec-0527f9b41504",
-      "purposeful": false,
       "pr": false,
-      "favorite": false,
-      "parent": false,
-      "decoDive": false,
+      "purposeful": false,
       "manualActivity": false,
       "autoCalcCalories": false,
       "elevationCorrected": true,
-      "atpActivity": false
+      "atpActivity": false,
+      "favorite": false,
+      "decoDive": false,
+      "parent": false
     }
   ],
   "resting_heart_rate": 41
