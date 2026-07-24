@@ -41,48 +41,11 @@
     "minHeartRate": null,
     "restingHeartRate": null,
     "lastSevenDaysAvgRestingHeartRate": null,
-    "heartRateValues": null,
-    "heartRateValueDescriptors": null
+    "heartRateValueDescriptors": null,
+    "heartRateValues": null
   },
   "hrv": {},
-  "body_battery": [
-    {
-      "date": "2026-07-23",
-      "charged": null,
-      "drained": null,
-      "startTimestampGMT": null,
-      "endTimestampGMT": null,
-      "startTimestampLocal": null,
-      "endTimestampLocal": null,
-      "bodyBatteryValuesArray": [
-        [
-          1784764800001,
-          null
-        ],
-        [
-          1784764800002,
-          null
-        ],
-        [
-          1784764800003,
-          null
-        ],
-        [
-          1784764800004,
-          null
-        ],
-        [
-          1784764800005,
-          null
-        ],
-        [
-          1784764800006,
-          null
-        ]
-      ],
-      "bodyBatteryValueDescriptorDTOList": null
-    }
-  ],
+  "body_battery": [],
   "stress": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-07-23",
@@ -98,6 +61,135 @@
     "stressValuesArray": []
   },
   "training_readiness": [],
-  "activities": [],
+  "activities": [
+    {
+      "activityId": 23711924667,
+      "activityName": "Biscarrosse Course \u00e0 pied",
+      "startTimeLocal": "2026-07-23 20:20:44",
+      "startTimeGMT": "2026-07-23 18:20:44",
+      "activityType": {
+        "typeId": 1,
+        "typeKey": "running",
+        "parentTypeId": 17,
+        "isHidden": false,
+        "restricted": false,
+        "trimmable": true
+      },
+      "eventType": {
+        "typeId": 9,
+        "typeKey": "uncategorized",
+        "sortOrder": 10
+      },
+      "distance": 7408.43017578125,
+      "duration": 2190.52294921875,
+      "elapsedDuration": 2474.031982421875,
+      "movingDuration": 2182.5139923095703,
+      "elevationGain": 31.688323974609375,
+      "elevationLoss": 34.30778884887695,
+      "averageSpeed": 3.381999969482422,
+      "maxSpeed": 3.947000026702881,
+      "startLatitude": 44.42736949771643,
+      "startLongitude": -1.2426674365997314,
+      "hasPolyline": true,
+      "hasImages": false,
+      "ownerId": 86877926,
+      "ownerDisplayName": "d0619bee-6605-42ab-9b53-58eed098da06",
+      "ownerFullName": "Luc",
+      "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/58175172-8c79-4a46-b02d-d75fb82cba59-86877926.png",
+      "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9c4ffeb3-e0c9-48e6-a4fa-a1b701a56ac0-86877926.png",
+      "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/daeb9233-1fda-41d4-a040-e71206c67944-86877926.png",
+      "calories": 412.0,
+      "averageHR": 137.0,
+      "maxHR": 168.0,
+      "averageRunningCadenceInStepsPerMinute": 161.640625,
+      "maxRunningCadenceInStepsPerMinute": 235.0,
+      "steps": 5868,
+      "userRoles": [
+        "SCOPE_GOLF_API_READ",
+        "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+        "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+        "SCOPE_ATP_READ",
+        "SCOPE_DIVE_API_WRITE",
+        "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+        "SCOPE_DIVE_API_READ",
+        "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_READ",
+        "SCOPE_CONNECT_WRITE",
+        "SCOPE_COMMUNITY_COURSE_WRITE",
+        "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+        "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+        "SCOPE_MESSAGE_GENERATION_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+        "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+        "SCOPE_ACTIVITY_DETECTION_READ",
+        "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+        "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+        "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+        "SCOPE_CONNECT_READ",
+        "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+        "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+        "SCOPE_ATP_WRITE",
+        "ROLE_CONNECTUSER",
+        "ROLE_FITNESS_USER",
+        "ROLE_WELLNESS_USER",
+        "ROLE_OUTDOOR_USER",
+        "ROLE_MARINE_USER",
+        "ROLE_DIVE_USER",
+        "ROLE_TACX_APP_USER",
+        "ROLE_GARMIN_USER"
+      ],
+      "privacy": {
+        "typeId": 2,
+        "typeKey": "private"
+      },
+      "userPro": false,
+      "hasVideo": false,
+      "timeZoneId": 124,
+      "beginTimestamp": 1784830844000,
+      "sportTypeId": 1,
+      "aerobicTrainingEffect": 2.700000047683716,
+      "avgStrideLength": 125.49309424899084,
+      "vO2MaxValue": 59.0,
+      "deviceId": 3319086716,
+      "minElevation": 7.649545669555664,
+      "maxElevation": 32.26810836791992,
+      "avgElevation": 17.87823139876494,
+      "maxDoubleCadence": 235.0,
+      "summarizedDiveInfo": {
+        "summarizedDiveGases": []
+      },
+      "maxVerticalSpeed": 0.43892250061035154,
+      "manufacturer": "GARMIN",
+      "locationName": "Biscarrosse",
+      "lapCount": 8,
+      "endLatitude": 44.44531439803541,
+      "endLongitude": -1.2520006019622087,
+      "minActivityLapDuration": 127.31199645996094,
+      "splitSummaries": [],
+      "hasSplits": false,
+      "hasIntensityIntervals": false,
+      "hasHeatMap": false,
+      "fastestSplit_1000": 259.5450134277344,
+      "fastestSplit_1609": 420.9169921875,
+      "fastestSplit_5000": 1419.7979736328125,
+      "hrTimeInZone_1": 58.01,
+      "hrTimeInZone_2": 820.505,
+      "hrTimeInZone_3": 1121.998,
+      "hrTimeInZone_4": 143.998,
+      "hrTimeInZone_5": 0.0,
+      "endTimeGMT": "2026-07-23 19:01:58",
+      "qualifyingDive": false,
+      "activityUUID": "7891c9b0-e987-41b7-8df5-4d97d71ba39e",
+      "autoCalcCalories": false,
+      "elevationCorrected": true,
+      "atpActivity": false,
+      "favorite": false,
+      "decoDive": false,
+      "parent": false,
+      "pr": false,
+      "purposeful": false,
+      "manualActivity": false
+    }
+  ],
   "resting_heart_rate": null
 }
