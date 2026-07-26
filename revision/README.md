@@ -1,5 +1,9 @@
 # 📚 Révisions — assistant d'étude local
 
+> 📱 **Sur iPhone ?** Une version installable sur l'écran d'accueil, sans serveur,
+> vit dans [`revision/mobile/`](mobile/README.md). Les deux versions échangent
+> leurs cours par export/import JSON.
+
 Application de révision inspirée d'Oria : tu déposes tes cours, Claude en tire des
 **flashcards**, des **QCM**, une **fiche de révision** et une **mind map**, puis
 l'app te fait réviser en **répétition espacée (SM-2)** avec missions quotidiennes,
@@ -86,6 +90,7 @@ revision/
 │   ├── srs.py           # répétition espacée SM-2
 │   └── store.py         # persistance JSON atomique
 ├── web/                 # index.html + style.css + app.js (aucun build)
+├── mobile/              # version installable sur téléphone, 100 % navigateur
 └── tests/
 ```
 

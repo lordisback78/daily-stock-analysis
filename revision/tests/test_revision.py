@@ -2,6 +2,7 @@
 """Tests de l'application de révision : python3 -m unittest discover revision/tests"""
 import io
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -203,6 +204,41 @@ class TestApi(unittest.TestCase):
         self.assertEqual(updated["daily_goal"], 45)
         self.assertNotIn("inconnu", updated)
         self.assertEqual(app.api_state({}, {})["settings"]["daily_goal"], 45)
+
+
+class TestMobileParity(unittest.TestCase):
+    """La version mobile réimplémente SM-2 en JS : on vérifie qu'elle ne dérive pas."""
+
+    @classmethod
+    def setUpClass(cls):
+        root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        with open(os.path.join(root, "mobile", "app.body.html"), encoding="utf-8") as handle:
+            cls.source = handle.read()
+
+    def test_learning_steps_match(self):
+        steps = re.search(r"const STEPS = \[([^\]]+)\]", self.source).group(1)
+        self.assertEqual([int(v.strip()) for v in steps.split(",")], srs.LEARNING_STEPS)
+
+    def test_min_ease_matches(self):
+        value = re.search(r"const MIN_EASE = ([\d.]+)", self.source).group(1)
+        self.assertEqual(float(value), srs.MIN_EASE)
+
+    def test_grades_match(self):
+        grades = re.search(r"const GRADES = \{([^}]+)\}", self.source).group(1)
+        parsed = dict(
+            (key.strip(), int(value))
+            for key, value in (pair.split(":") for pair in grades.split(",") if ":" in pair)
+        )
+        self.assertEqual(parsed, srs.GRADES)
+
+    def test_generated_files_are_in_sync(self):
+        root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        for name in ("index.html", "artifact.html"):
+            path = os.path.join(root, "mobile", name)
+            with open(path, encoding="utf-8") as handle:
+                built = handle.read()
+            self.assertIn(self.source.strip(), built,
+                          f"{name} est périmé : relance revision/mobile/build.py")
 
 
 class TestAiParsing(unittest.TestCase):

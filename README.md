@@ -52,3 +52,6 @@ python3 revision/run.py --open
 ```
 
 Détails, formats acceptés et options : [`revision/README.md`](revision/README.md).
+
+Version installable sur l'écran d'accueil de l'iPhone (sans serveur, hors ligne) :
+[`revision/mobile/README.md`](revision/mobile/README.md).
