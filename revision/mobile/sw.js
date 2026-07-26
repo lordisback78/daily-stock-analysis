@@ -1,6 +1,6 @@
 /* Service worker : met l'app en cache pour qu'elle démarre sans réseau.
    Les cours et les cartes vivent dans IndexedDB, jamais ici. */
-const CACHE = 'revisions-v1';
+const CACHE = 'revisions-v2';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', (event) => {

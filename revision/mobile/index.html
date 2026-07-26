@@ -791,6 +791,39 @@ async function readZipFile(zip, entry) {
   return new TextDecoder('utf-8').decode(data);
 }
 
+/** Décodage robuste d'un fichier texte : BOM, UTF-8 strict, puis Windows-1252
+    (les cours exportés depuis Word sur Windows ne sont pas en UTF-8). */
+function decodeBytes(buffer) {
+  const bytes = new Uint8Array(buffer);
+  if (bytes[0] === 0xff && bytes[1] === 0xfe) return new TextDecoder('utf-16le').decode(bytes.subarray(2));
+  if (bytes[0] === 0xfe && bytes[1] === 0xff) return new TextDecoder('utf-16be').decode(bytes.subarray(2));
+  const body = bytes[0] === 0xef && bytes[1] === 0xbb && bytes[2] === 0xbf ? bytes.subarray(3) : bytes;
+  try {
+    return new TextDecoder('utf-8', { fatal: true }).decode(body);
+  } catch {
+    return new TextDecoder('windows-1252').decode(body);
+  }
+}
+
+/* Un PDF dont les polices sont encodées par sous-ensemble rend du charabia :
+   soit une soupe de symboles, soit des lettres décalées. On refuse les deux
+   plutôt que de fabriquer des cartes illisibles. */
+const PLAUSIBLE_CHARS = /[\p{L}\p{N}\s.,;:!?'"«»()[\]{}%°€$£/+\-–—=*<>&@#_|~^\\]/u;
+const COMMON_WORDS = /(^|[^\p{L}])(le|la|les|des|du|de|et|est|sont|un|une|dans|pour|que|qui|sur|avec|par|aux|ce|cette|plus|the|of|and|to|in|is|for)([^\p{L}]|$)/giu;
+
+function looksUnreadable(text) {
+  if (!text || text.trim().length < 20) return true;
+  const sample = text.slice(0, 6000);
+  if (sample.includes('\uFFFD')) return true;   // caractère de remplacement = décodage raté
+  let plausible = 0;
+  for (const char of sample) if (PLAUSIBLE_CHARS.test(char)) plausible++;
+  if (plausible / sample.length < 0.85) return true;
+  const letters = (sample.match(/\p{L}/gu) || []).length;
+  const words = (sample.match(COMMON_WORDS) || []).length;
+  // Beaucoup de lettres mais aucun mot courant : encodage exotique.
+  return letters > 300 && words < 3;
+}
+
 function stripXml(xml, breaks = ['</w:p>', '</a:p>', '</text:p>', '</text:h>']) {
   let text = xml;
   for (const tag of breaks) text = text.split(tag).join('\n');
@@ -875,20 +908,28 @@ async function fromPdf(buffer) {
   return chunks.join('\n\n');
 }
 
+const NOT_HERE = 'passe par la version desktop (elle le fait transcrire par Claude), ou colle le texte du cours';
+
 async function extractFile(file) {
   const name = file.name.toLowerCase();
   const ext = name.includes('.') ? name.slice(name.lastIndexOf('.')) : '';
-  if (['.txt', '.md', '.markdown', '.csv', '.tsv', '.rst', '.json'].includes(ext)) return { text: await file.text(), kind: ext.slice(1) };
-  if (['.html', '.htm'].includes(ext)) {
-    return { text: stripXml(await file.text(), ['</p>', '</div>', '</li>', '</h1>', '</h2>', '</h3>', '<br>', '<br/>']), kind: 'html' };
-  }
   const buffer = await file.arrayBuffer();
+
+  if (['.txt', '.md', '.markdown', '.csv', '.tsv', '.rst', '.json'].includes(ext)) {
+    return { text: decodeBytes(buffer), kind: ext.slice(1) };
+  }
+  if (['.html', '.htm'].includes(ext)) {
+    return { text: stripXml(decodeBytes(buffer), ['</p>', '</div>', '</li>', '</h1>', '</h2>', '</h3>', '<br>', '<br/>']), kind: 'html' };
+  }
   if (ext === '.docx') return { text: await fromOfficeZip(buffer, 'docx'), kind: 'docx' };
   if (ext === '.pptx') return { text: await fromOfficeZip(buffer, 'pptx'), kind: 'pptx' };
   if (ext === '.odt') return { text: await fromOfficeZip(buffer, 'odt'), kind: 'odt' };
   if (ext === '.pdf') {
     const text = await fromPdf(buffer);
-    if (!text.trim()) throw new Error('PDF sans calque texte (scan ou photo) : passe par la version desktop, ou colle le texte');
+    if (!text.trim()) throw new Error(`PDF sans calque texte (scan ou photo) : ${NOT_HERE}`);
+    if (looksUnreadable(text)) {
+      throw new Error(`PDF à polices encodées, le texte extrait est illisible : ${NOT_HERE}`);
+    }
     return { text, kind: 'pdf' };
   }
   throw new Error(`format ${ext || 'inconnu'} non pris en charge ici`);
@@ -1246,7 +1287,13 @@ async function importFiles(files) {
         if (!text.trim()) throw new Error('aucun texte trouvé dans le fichier');
         const course = addCourse({ title: file.name.replace(/\.[^.]+$/, ''), text, kind });
         await save({ now: true });
-        line.innerHTML = `✅ ${esc(file.name)} — <span class="num">${text.length.toLocaleString('fr-FR')}</span> caractères`;
+        // Aperçu du texte lu : le charabia se voit tout de suite.
+        const preview = text.split('\n').map((l) => l.trim()).find(Boolean) || '';
+        line.innerHTML = `✅ ${esc(file.name)} — <span class="num">${text.length.toLocaleString('fr-FR')}</span> caractères`
+          + `<div class="tiny soft">« ${esc(preview.slice(0, 70))}${preview.length > 70 ? '…' : ''} »</div>`;
+        if (looksUnreadable(text)) {
+          toast(`Le texte lu dans ${file.name} semble illisible : vérifie « Contenu importé » avant de fabriquer des cartes.`, 'bad');
+        }
         if (files.length === 1) openCourse(course.id);
       }
       refresh();
@@ -1375,9 +1422,13 @@ function openCourse(courseId) {
     </div>
 
     <div class="panel">
-      <div class="panel-head"><h2>Contenu importé</h2>
+      <div class="panel-head"><h2>Contenu du cours</h2>
         <button class="btn mini quiet" id="toggle-raw">Afficher</button></div>
-      <div class="raw hide" id="raw">${esc(course.text)}</div>
+      ${looksUnreadable(course.text) ? '<p class="sheet-note" style="margin-bottom:10px">⚠️ Ce texte semble illisible (PDF à polices encodées, ou mauvais encodage). Remplace-le ci-dessous par le texte de ton cours, sinon les cartes fabriquées seront du charabia.</p>' : ''}
+      <div id="raw-box" class="hide">
+        <textarea id="raw" style="min-height:240px;font-size:.8125rem">${esc(course.text)}</textarea>
+        <button class="btn mini" id="save-raw">Enregistrer le contenu</button>
+      </div>
     </div>
   </div>`;
   document.body.style.overflow = 'hidden';
@@ -1397,9 +1448,18 @@ function openCourse(courseId) {
     openCourse(courseId);
   };
   $('#toggle-raw').onclick = () => {
-    const raw = $('#raw');
-    raw.classList.toggle('hide');
-    $('#toggle-raw').textContent = raw.classList.contains('hide') ? 'Afficher' : 'Masquer';
+    const box = $('#raw-box');
+    box.classList.toggle('hide');
+    $('#toggle-raw').textContent = box.classList.contains('hide') ? 'Afficher' : 'Masquer';
+  };
+  $('#save-raw').onclick = () => {
+    const text = $('#raw').value.trim();
+    if (!text) return toast('Le contenu ne peut pas être vide', 'bad');
+    course.text = text;
+    save({ now: true });
+    toast('Contenu remplacé — tu peux refabriquer les cartes', 'good');
+    refresh();
+    openCourse(courseId);
   };
   $('#card-add').onclick = () => addCardManually(courseId);
   $('#card-list').onclick = (event) => {
@@ -1471,6 +1531,12 @@ async function generate(courseId) {
   const nFlash = Number($('#gen-flash').value);
   const nQcm = Number($('#gen-qcm').value);
   const level = $('#gen-level').value;
+  if (looksUnreadable(course.text)) {
+    log.innerHTML = '<div>⚠️ Le contenu de ce cours est illisible : les cartes seraient du charabia. '
+      + 'Ouvre « Contenu du cours » ci-dessous et colle le vrai texte.</div>';
+    toast('Contenu illisible : remplace-le avant de fabriquer les cartes', 'bad');
+    return;
+  }
   button.disabled = true;
   log.innerHTML = apiKey
     ? '<div><span class="spin"></span> Claude lit ton cours…</div>'

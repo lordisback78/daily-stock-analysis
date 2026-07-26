@@ -159,11 +159,26 @@ def from_pdf(data):
     return "\n\n".join(chunks)
 
 
+COMMON_WORDS = re.compile(
+    r"\b(le|la|les|des|du|de|et|est|sont|un|une|dans|pour|que|qui|sur|avec|par|aux|ce|cette|plus"
+    r"|the|of|and|to|in|is|for)\b", re.IGNORECASE)
+
+
 def looks_garbled(text):
+    """Vrai si le texte n'est pas du langage lisible.
+
+    Deux symptômes distincts : une soupe de symboles (polices exotiques), ou des
+    lettres décalées par un encodage de sous-ensemble — celles-ci passent le test
+    de jeu de caractères, d'où la recherche de mots courants.
+    """
     if not text:
         return True
-    letters = sum(ch.isalpha() or ch.isspace() or ch in ",.;:!?'\"()-–—%°" for ch in text)
-    return letters / max(1, len(text)) < 0.75
+    sample = text[:6000]
+    letters = sum(ch.isalpha() or ch.isspace() or ch in ",.;:!?'\"()-–—%°" for ch in sample)
+    if letters / max(1, len(sample)) < 0.75:
+        return True
+    alphabetic = sum(ch.isalpha() for ch in sample)
+    return alphabetic > 300 and len(COMMON_WORDS.findall(sample)) < 3
 
 
 def extract(filename, data):

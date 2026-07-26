@@ -93,6 +93,15 @@ class TestExtract(unittest.TestCase):
         self.assertTrue(result["needs_ai"])
         self.assertEqual(result["media_type"], "application/pdf")
 
+    def test_shifted_text_is_seen_as_garbled(self):
+        # Un PDF à polices encodées rend des lettres décalées : lisible comme jeu de
+        # caractères, mais sans aucun mot réel -> doit repartir vers l'IA.
+        shifted = ("Uif tvcfu pg uif dpvstf jt opu sfbebcmf cfdbvtf uif gpou jt tvcffu "
+                   "fodpefe boe fwfsz mfuufs jt tijgufe cz pof qptjujpo jo uif bmqibcfu. ") * 4
+        self.assertTrue(extract.looks_garbled(shifted))
+        self.assertFalse(extract.looks_garbled(
+            "Le theoreme de Thales enonce que les rapports sont egaux dans un triangle. " * 6))
+
     def test_pdf_with_text_operators(self):
         content = b"BT (Le theoreme de Thales enonce que) Tj T* (les rapports sont egaux dans un triangle.) Tj ET"
         pdf = b"%PDF-1.4\nstream\n" + content + b"\nendstream\n" + b"x" * 400
