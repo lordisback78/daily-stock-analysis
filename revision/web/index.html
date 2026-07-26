@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#6c5ce7">
+<title>Révisions — assistant d'étude</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+</head>
+<body>
+<div id="toasts" class="toasts"></div>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">📚</span>
+    <div>
+      <strong>Révisions</strong>
+      <small id="tagline">assistant d'étude</small>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <span id="streak-chip" class="chip" title="Jours consécutifs de révision">🔥 <b>0</b></span>
+    <span id="due-chip" class="chip" title="Cartes à réviser maintenant">⏰ <b>0</b></span>
+    <button id="theme-toggle" class="icon-btn" title="Thème clair / sombre">◐</button>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button data-view="today" class="active">Aujourd'hui</button>
+  <button data-view="courses">Cours</button>
+  <button data-view="review">Réviser</button>
+  <button data-view="exam">Examen</button>
+  <button data-view="stats">Stats</button>
+  <button data-view="settings">Réglages</button>
+</nav>
+
+<main>
+  <!-- ------------------------------------------------------------------ -->
+  <section id="view-today" class="view active">
+    <div class="grid-hero">
+      <div class="card hero">
+        <div class="ring-wrap">
+          <svg class="ring" viewBox="0 0 120 120">
+            <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+            <circle id="ring-fill" class="ring-fill" cx="60" cy="60" r="52"></circle>
+          </svg>
+          <div class="ring-label">
+            <b id="goal-done">0</b>
+            <small>/ <span id="goal-total">30</span> cartes</small>
+          </div>
+        </div>
+        <div class="hero-text">
+          <h1 id="hero-title">Prêt à réviser ?</h1>
+          <p id="hero-sub" class="muted">Importe un cours pour démarrer.</p>
+          <div class="row">
+            <button class="btn primary" id="btn-start-due">Lancer la session</button>
+            <button class="btn ghost" id="btn-quick-quiz">Quiz éclair</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Missions du jour</h2>
+        <ul id="missions" class="missions"></ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <h2>Mes cours</h2>
+        <button class="btn small" data-goto="courses">Tout voir</button>
+      </div>
+      <div id="today-courses" class="course-strip"></div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section id="view-courses" class="view">
+    <div id="courses-list-pane">
+      <div class="card">
+        <h2>Ajouter un cours</h2>
+        <div id="dropzone" class="dropzone">
+          <p><b>Glisse un fichier ici</b> — PDF, DOCX, PPTX, TXT, MD, photo de tableau…</p>
+          <div class="row">
+            <label class="btn small">Choisir un fichier<input type="file" id="file-input" hidden multiple accept=".pdf,.docx,.pptx,.txt,.md,.csv,.html,.odt,.odp,.png,.jpg,.jpeg,.webp"></label>
+            <button class="btn small ghost" id="btn-paste-course">Coller du texte</button>
+          </div>
+        </div>
+        <div id="paste-pane" class="hidden">
+          <div class="row">
+            <input id="paste-title" placeholder="Titre du cours" class="grow">
+            <input id="paste-subject" placeholder="Matière" class="grow">
+          </div>
+          <textarea id="paste-text" rows="10" placeholder="Colle ici tes notes de cours…"></textarea>
+          <div class="row">
+            <button class="btn primary" id="btn-save-paste">Enregistrer le cours</button>
+            <button class="btn ghost" id="btn-cancel-paste">Annuler</button>
+          </div>
+        </div>
+        <div id="import-log" class="import-log"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h2>Bibliothèque</h2>
+          <input id="course-search" class="search" placeholder="Rechercher…">
+        </div>
+        <div id="courses-list" class="courses"></div>
+      </div>
+    </div>
+
+    <div id="course-detail" class="hidden"></div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section id="view-review" class="view">
+    <div id="review-setup" class="card">
+      <h2>Session de révision</h2>
+      <div class="row wrap">
+        <label>Portée
+          <select id="review-scope">
+            <option value="due">Cartes dues (recommandé)</option>
+            <option value="new">Nouvelles cartes</option>
+            <option value="hard">Points faibles</option>
+            <option value="all">Entraînement libre</option>
+          </select>
+        </label>
+        <label>Cours
+          <select id="review-course"><option value="">Tous les cours</option></select>
+        </label>
+        <label>Type
+          <select id="review-type">
+            <option value="">Flashcards + QCM</option>
+            <option value="flashcard">Flashcards</option>
+            <option value="qcm">QCM</option>
+          </select>
+        </label>
+        <label>Longueur
+          <select id="review-limit">
+            <option>10</option><option selected>20</option><option>40</option><option>80</option>
+          </select>
+        </label>
+      </div>
+      <button class="btn primary" id="btn-run-session">Commencer</button>
+      <p class="muted small">Raccourcis : <kbd>Espace</kbd> révéler · <kbd>1</kbd> à revoir · <kbd>2</kbd> difficile · <kbd>3</kbd> correct · <kbd>4</kbd> facile</p>
+    </div>
+
+    <div id="review-runner" class="hidden"></div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section id="view-exam" class="view">
+    <div id="exam-setup" class="card">
+      <h2>Examen blanc</h2>
+      <p class="muted">Questions tirées de tes cartes, corrigées à la fin. Les questions ouvertes sont notées par l'IA quand elle est disponible.</p>
+      <div class="row wrap">
+        <label>Cours
+          <select id="exam-course"><option value="all">Tous les cours</option></select>
+        </label>
+        <label>Questions
+          <select id="exam-count"><option>10</option><option selected>15</option><option>25</option><option>40</option></select>
+        </label>
+        <label>Chrono
+          <select id="exam-timer">
+            <option value="0">Sans limite</option>
+            <option value="15">15 min</option>
+            <option value="30" selected>30 min</option>
+            <option value="60">1 h</option>
+          </select>
+        </label>
+      </div>
+      <button class="btn primary" id="btn-run-exam">Démarrer l'examen</button>
+    </div>
+    <div id="exam-runner" class="hidden"></div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section id="view-stats" class="view">
+    <div class="stat-grid" id="stat-tiles"></div>
+    <div class="card">
+      <h2>Activité (120 derniers jours)</h2>
+      <div id="heatmap" class="heatmap"></div>
+      <div class="heatmap-legend muted small"><span>moins</span><i class="l0"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><span>plus</span></div>
+    </div>
+    <div class="two-col">
+      <div class="card">
+        <h2>Charge à venir</h2>
+        <div id="forecast" class="bars"></div>
+      </div>
+      <div class="card">
+        <h2>Par matière</h2>
+        <div id="per-subject"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ -->
+  <section id="view-settings" class="view">
+    <div class="card">
+      <h2>Réglages</h2>
+      <div class="field">
+        <label for="set-model">Modèle Claude</label>
+        <select id="set-model">
+          <option value="claude-sonnet-5">claude-sonnet-5 — rapide, idéal au quotidien</option>
+          <option value="claude-opus-5">claude-opus-5 — le plus fin sur les cours ardus</option>
+          <option value="claude-haiku-4-5-20251001">claude-haiku-4.5 — le plus économique</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="set-goal">Objectif quotidien (cartes)</label>
+        <input type="number" id="set-goal" min="5" max="300" step="5">
+      </div>
+      <div class="row wrap">
+        <div class="field"><label for="set-flash">Flashcards par génération</label><input type="number" id="set-flash" min="5" max="60"></div>
+        <div class="field"><label for="set-qcm">QCM par génération</label><input type="number" id="set-qcm" min="0" max="40"></div>
+      </div>
+      <button class="btn primary" id="btn-save-settings">Enregistrer</button>
+    </div>
+    <div class="card">
+      <h2>État de l'IA</h2>
+      <p id="ai-status" class="muted"></p>
+      <p class="muted small">La clé est lue côté serveur dans <code>ANTHROPIC_API_KEY</code> et n'est jamais envoyée au navigateur.</p>
+    </div>
+    <div class="card">
+      <h2>Données</h2>
+      <p class="muted small">Tout est stocké en local dans <code>revision/data/store.json</code>.</p>
+      <button class="btn small" id="btn-export">Exporter en JSON</button>
+    </div>
+  </section>
+</main>
+
+<script src="/app.js"></script>
+</body>
+</html>

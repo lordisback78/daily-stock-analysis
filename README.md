@@ -38,3 +38,17 @@ Le workflow `.github/workflows/garmin_sync.yml` s'occupe du reste.
 ## 🔧 Pour ajuster l'heure
 
 Modifie le cron dans `.github/workflows/garmin_sync.yml` ligne 6.
+
+---
+
+# 📚 Révisions
+
+Application de révision locale (façon Oria) : dépose tes cours (PDF, DOCX, PPTX,
+photos, notes), Claude en tire flashcards, QCM, fiche de révision et mind map,
+puis l'app te fait réviser en répétition espacée avec examens blancs et stats.
+
+```bash
+python3 revision/run.py --open
+```
+
+Détails, formats acceptés et options : [`revision/README.md`](revision/README.md).
