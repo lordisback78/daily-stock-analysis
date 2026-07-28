@@ -34,7 +34,7 @@
     "userProfilePK": 86877926,
     "calendarDate": "2026-07-26",
     "startTimestampGMT": "2026-07-25T22:00:00.0",
-    "endTimestampGMT": "2026-07-26T10:46:00.0",
+    "endTimestampGMT": "2026-07-26T22:00:00.0",
     "startTimestampLocal": "2026-07-26T00:00:00.0",
     "endTimestampLocal": "2026-07-27T00:00:00.0",
     "maxHeartRate": 167,
@@ -319,6 +319,62 @@
       [
         1785062040000,
         81
+      ],
+      [
+        1785062160000,
+        null
+      ],
+      [
+        1785066480000,
+        84
+      ],
+      [
+        1785066600000,
+        null
+      ],
+      [
+        1785069600000,
+        81
+      ],
+      [
+        1785069720000,
+        null
+      ],
+      [
+        1785075720000,
+        81
+      ],
+      [
+        1785075840000,
+        null
+      ],
+      [
+        1785078600000,
+        80
+      ],
+      [
+        1785078720000,
+        null
+      ],
+      [
+        1785091920000,
+        81
+      ],
+      [
+        1785092040000,
+        null
+      ],
+      [
+        1785092400000,
+        82
+      ],
+      [
+        1785092520000,
+        null
+      ],
+      [
+        1785093360000,
+        81
       ]
     ]
   },
@@ -329,9 +385,9 @@
       "charged": null,
       "drained": null,
       "startTimestampGMT": "2026-07-25T22:00:00.0",
-      "endTimestampGMT": "2026-07-26T10:46:00.0",
+      "endTimestampGMT": "2026-07-26T22:00:00.0",
       "startTimestampLocal": "2026-07-26T00:00:00.0",
-      "endTimestampLocal": "2026-07-26T12:46:00.0",
+      "endTimestampLocal": "2026-07-27T00:00:00.0",
       "bodyBatteryValuesArray": [
         [
           1785024000001,
@@ -374,9 +430,9 @@
     "userProfilePK": 86877926,
     "calendarDate": "2026-07-26",
     "startTimestampGMT": "2026-07-25T22:00:00.0",
-    "endTimestampGMT": "2026-07-26T10:46:00.0",
+    "endTimestampGMT": "2026-07-26T22:00:00.0",
     "startTimestampLocal": "2026-07-26T00:00:00.0",
-    "endTimestampLocal": "2026-07-26T12:46:00.0",
+    "endTimestampLocal": "2026-07-27T00:00:00.0",
     "maxStressLevel": null,
     "avgStressLevel": null,
     "stressChartValueOffset": 1,
@@ -497,12 +553,12 @@
       "endTimeGMT": "2026-07-26 10:09:18",
       "qualifyingDive": false,
       "activityUUID": "6961dcb4-b2fc-4e4b-b18f-f45b4dd7434d",
+      "pr": false,
       "parent": false,
+      "purposeful": false,
+      "manualActivity": false,
       "favorite": false,
       "decoDive": false,
-      "purposeful": false,
-      "pr": false,
-      "manualActivity": false,
       "autoCalcCalories": false,
       "elevationCorrected": true,
       "atpActivity": false
