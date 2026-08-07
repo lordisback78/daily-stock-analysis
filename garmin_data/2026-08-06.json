@@ -45,44 +45,7 @@
     "heartRateValues": null
   },
   "hrv": {},
-  "body_battery": [
-    {
-      "date": "2026-08-06",
-      "charged": null,
-      "drained": null,
-      "startTimestampGMT": null,
-      "endTimestampGMT": null,
-      "startTimestampLocal": null,
-      "endTimestampLocal": null,
-      "bodyBatteryValuesArray": [
-        [
-          1785974400001,
-          null
-        ],
-        [
-          1785974400002,
-          null
-        ],
-        [
-          1785974400003,
-          null
-        ],
-        [
-          1785974400004,
-          null
-        ],
-        [
-          1785974400005,
-          null
-        ],
-        [
-          1785974400006,
-          null
-        ]
-      ],
-      "bodyBatteryValueDescriptorDTOList": null
-    }
-  ],
+  "body_battery": [],
   "stress": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-06",
@@ -98,6 +61,137 @@
     "stressValuesArray": []
   },
   "training_readiness": [],
-  "activities": [],
+  "activities": [
+    {
+      "activityId": 23873911527,
+      "activityName": "Vaison-la-Romaine Cyclisme",
+      "startTimeLocal": "2026-08-06 07:42:07",
+      "startTimeGMT": "2026-08-06 05:42:07",
+      "activityType": {
+        "typeId": 2,
+        "typeKey": "cycling",
+        "parentTypeId": 17,
+        "isHidden": false,
+        "restricted": false,
+        "trimmable": true
+      },
+      "eventType": {
+        "typeId": 9,
+        "typeKey": "uncategorized",
+        "sortOrder": 10
+      },
+      "isFavorite": false,
+      "isPR": true,
+      "isAutoCalcCalories": false,
+      "isParent": false,
+      "distance": 131735.203125,
+      "duration": 20293.740234375,
+      "elapsedDuration": 22047.86328125,
+      "movingDuration": 20102.868057250977,
+      "elevationGain": 2895.245880126953,
+      "elevationLoss": 2770.8111114501953,
+      "averageSpeed": 6.491000175476074,
+      "maxSpeed": 19.351999282836914,
+      "startLatitude": 44.23882252536714,
+      "startLongitude": 5.074573494493961,
+      "hasPolyline": true,
+      "hasImages": false,
+      "ownerId": 86877926,
+      "ownerDisplayName": "d0619bee-6605-42ab-9b53-58eed098da06",
+      "ownerFullName": "Luc",
+      "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/58175172-8c79-4a46-b02d-d75fb82cba59-86877926.png",
+      "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9c4ffeb3-e0c9-48e6-a4fa-a1b701a56ac0-86877926.png",
+      "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/daeb9233-1fda-41d4-a040-e71206c67944-86877926.png",
+      "calories": 3294.0,
+      "averageHR": 147.0,
+      "maxHR": 181.0,
+      "userRoles": [
+        "SCOPE_GOLF_API_READ",
+        "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+        "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+        "SCOPE_ATP_READ",
+        "SCOPE_DIVE_API_WRITE",
+        "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+        "SCOPE_DIVE_API_READ",
+        "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_READ",
+        "SCOPE_CONNECT_WRITE",
+        "SCOPE_COMMUNITY_COURSE_WRITE",
+        "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+        "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+        "SCOPE_MESSAGE_GENERATION_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+        "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+        "SCOPE_ACTIVITY_DETECTION_READ",
+        "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+        "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+        "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+        "SCOPE_CONNECT_READ",
+        "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+        "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+        "SCOPE_ATP_WRITE",
+        "ROLE_CONNECTUSER",
+        "ROLE_FITNESS_USER",
+        "ROLE_WELLNESS_USER",
+        "ROLE_OUTDOOR_USER",
+        "ROLE_MARINE_USER",
+        "ROLE_DIVE_USER",
+        "ROLE_TACX_APP_USER",
+        "ROLE_GARMIN_USER"
+      ],
+      "privacy": {
+        "typeId": 2,
+        "typeKey": "private"
+      },
+      "userPro": false,
+      "hasVideo": false,
+      "isPurposeful": false,
+      "timeZoneId": 124,
+      "beginTimestamp": 1785994927000,
+      "sportTypeId": 2,
+      "aerobicTrainingEffect": 4.099999904632568,
+      "maxFtp": 200.0,
+      "deviceId": 3319086716,
+      "minElevation": 72.7385025024414,
+      "maxElevation": 1904.271728515625,
+      "avgElevation": 682.3005153354326,
+      "isElevationCorrected": true,
+      "isDecoDive": false,
+      "summarizedDiveInfo": {
+        "summarizedDiveGases": []
+      },
+      "maxVerticalSpeed": 4.075538635253906,
+      "manufacturer": "GARMIN",
+      "locationName": "Vaison-la-Romaine",
+      "lapCount": 27,
+      "endLatitude": 44.17331141419709,
+      "endLongitude": 5.133727854117751,
+      "isAtpActivity": false,
+      "minActivityLapDuration": 192.97999572753906,
+      "splitSummaries": [],
+      "hasSplits": false,
+      "hasIntensityIntervals": false,
+      "isManualActivity": false,
+      "hasHeatMap": false,
+      "fastestSplit_40000": 3677.617919921875,
+      "hrTimeInZone_1": 511.656,
+      "hrTimeInZone_2": 4044.56,
+      "hrTimeInZone_3": 7844.177,
+      "hrTimeInZone_4": 7859.405,
+      "hrTimeInZone_5": 10.0,
+      "endTimeGMT": "2026-08-06 11:49:34",
+      "qualifyingDive": false,
+      "activityUUID": "89849e1a-d72d-49b8-b705-9b79722540f7",
+      "pr": true,
+      "favorite": false,
+      "purposeful": false,
+      "autoCalcCalories": false,
+      "parent": false,
+      "elevationCorrected": true,
+      "atpActivity": false,
+      "decoDive": false,
+      "manualActivity": false
+    }
+  ],
   "resting_heart_rate": null
 }
