@@ -72,8 +72,8 @@
         "typeKey": "cycling",
         "parentTypeId": 17,
         "isHidden": false,
-        "restricted": false,
-        "trimmable": true
+        "trimmable": true,
+        "restricted": false
       },
       "eventType": {
         "typeId": 9,
@@ -182,15 +182,15 @@
       "endTimeGMT": "2026-08-06 11:49:34",
       "qualifyingDive": false,
       "activityUUID": "89849e1a-d72d-49b8-b705-9b79722540f7",
-      "pr": true,
-      "favorite": false,
-      "purposeful": false,
-      "autoCalcCalories": false,
-      "parent": false,
-      "elevationCorrected": true,
       "atpActivity": false,
+      "autoCalcCalories": false,
+      "favorite": false,
+      "manualActivity": false,
+      "elevationCorrected": true,
+      "pr": true,
+      "parent": false,
       "decoDive": false,
-      "manualActivity": false
+      "purposeful": false
     }
   ],
   "resting_heart_rate": null
