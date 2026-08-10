@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-09",
+  "date": "2026-08-10",
   "errors": {},
   "sleep": {
     "dailySleepDTO": {
       "id": null,
       "userProfilePK": 86877926,
-      "calendarDate": "2026-08-09",
+      "calendarDate": "2026-08-10",
       "sleepTimeSeconds": null,
       "napTimeSeconds": null,
       "sleepWindowConfirmed": null,
@@ -32,7 +32,7 @@
   },
   "heart_rates": {
     "userProfilePK": 86877926,
-    "calendarDate": "2026-08-09",
+    "calendarDate": "2026-08-10",
     "startTimestampGMT": null,
     "endTimestampGMT": null,
     "startTimestampLocal": null,
@@ -47,7 +47,7 @@
   "hrv": {},
   "body_battery": [
     {
-      "date": "2026-08-09",
+      "date": "2026-08-10",
       "charged": null,
       "drained": null,
       "startTimestampGMT": null,
@@ -56,27 +56,27 @@
       "endTimestampLocal": null,
       "bodyBatteryValuesArray": [
         [
-          1786233600001,
+          1786320000001,
           null
         ],
         [
-          1786233600002,
+          1786320000002,
           null
         ],
         [
-          1786233600003,
+          1786320000003,
           null
         ],
         [
-          1786233600004,
+          1786320000004,
           null
         ],
         [
-          1786233600005,
+          1786320000005,
           null
         ],
         [
-          1786233600006,
+          1786320000006,
           null
         ]
       ],
@@ -85,7 +85,7 @@
   ],
   "stress": {
     "userProfilePK": 86877926,
-    "calendarDate": "2026-08-09",
+    "calendarDate": "2026-08-10",
     "startTimestampGMT": null,
     "endTimestampGMT": null,
     "startTimestampLocal": null,
