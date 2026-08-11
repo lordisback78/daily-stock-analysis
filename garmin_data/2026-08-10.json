@@ -45,44 +45,7 @@
     "heartRateValues": null
   },
   "hrv": {},
-  "body_battery": [
-    {
-      "date": "2026-08-10",
-      "charged": null,
-      "drained": null,
-      "startTimestampGMT": null,
-      "endTimestampGMT": null,
-      "startTimestampLocal": null,
-      "endTimestampLocal": null,
-      "bodyBatteryValuesArray": [
-        [
-          1786320000001,
-          null
-        ],
-        [
-          1786320000002,
-          null
-        ],
-        [
-          1786320000003,
-          null
-        ],
-        [
-          1786320000004,
-          null
-        ],
-        [
-          1786320000005,
-          null
-        ],
-        [
-          1786320000006,
-          null
-        ]
-      ],
-      "bodyBatteryValueDescriptorDTOList": null
-    }
-  ],
+  "body_battery": [],
   "stress": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-10",
@@ -98,6 +61,140 @@
     "stressValuesArray": []
   },
   "training_readiness": [],
-  "activities": [],
+  "activities": [
+    {
+      "activityId": 23922633957,
+      "activityName": "Chamonix-Mont-Blanc Randonn\u00e9e",
+      "startTimeLocal": "2026-08-10 08:50:13",
+      "startTimeGMT": "2026-08-10 06:50:13",
+      "activityType": {
+        "typeId": 3,
+        "typeKey": "hiking",
+        "parentTypeId": 17,
+        "isHidden": false,
+        "restricted": false,
+        "trimmable": true
+      },
+      "eventType": {
+        "typeId": 9,
+        "typeKey": "uncategorized",
+        "sortOrder": 10
+      },
+      "isFavorite": false,
+      "isPR": false,
+      "isAutoCalcCalories": false,
+      "isParent": false,
+      "distance": 7495.97998046875,
+      "duration": 9744.8818359375,
+      "elapsedDuration": 9744.8818359375,
+      "movingDuration": 8831.666015625,
+      "elevationGain": 1510.55126953125,
+      "elevationLoss": 84.4232177734375,
+      "averageSpeed": 0.7689999938011169,
+      "maxSpeed": 1.847000002861023,
+      "startLatitude": 45.898617804050446,
+      "startLongitude": 6.844814261421561,
+      "hasPolyline": true,
+      "hasImages": false,
+      "ownerId": 86877926,
+      "ownerDisplayName": "d0619bee-6605-42ab-9b53-58eed098da06",
+      "ownerFullName": "Luc",
+      "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/58175172-8c79-4a46-b02d-d75fb82cba59-86877926.png",
+      "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9c4ffeb3-e0c9-48e6-a4fa-a1b701a56ac0-86877926.png",
+      "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/daeb9233-1fda-41d4-a040-e71206c67944-86877926.png",
+      "calories": 905.0,
+      "averageHR": 112.0,
+      "maxHR": 112.0,
+      "averageRunningCadenceInStepsPerMinute": 110.0,
+      "maxRunningCadenceInStepsPerMinute": 184.0,
+      "steps": 11908,
+      "userRoles": [
+        "SCOPE_GOLF_API_READ",
+        "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+        "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+        "SCOPE_ATP_READ",
+        "SCOPE_DIVE_API_WRITE",
+        "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+        "SCOPE_DIVE_API_READ",
+        "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_READ",
+        "SCOPE_CONNECT_WRITE",
+        "SCOPE_COMMUNITY_COURSE_WRITE",
+        "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+        "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+        "SCOPE_MESSAGE_GENERATION_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+        "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+        "SCOPE_ACTIVITY_DETECTION_READ",
+        "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+        "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+        "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+        "SCOPE_CONNECT_READ",
+        "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+        "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+        "SCOPE_ATP_WRITE",
+        "ROLE_CONNECTUSER",
+        "ROLE_FITNESS_USER",
+        "ROLE_WELLNESS_USER",
+        "ROLE_OUTDOOR_USER",
+        "ROLE_MARINE_USER",
+        "ROLE_DIVE_USER",
+        "ROLE_TACX_APP_USER",
+        "ROLE_GARMIN_USER"
+      ],
+      "privacy": {
+        "typeId": 2,
+        "typeKey": "private"
+      },
+      "userPro": false,
+      "hasVideo": false,
+      "isPurposeful": false,
+      "timeZoneId": 124,
+      "beginTimestamp": 1786344613000,
+      "sportTypeId": 17,
+      "aerobicTrainingEffect": 1.5,
+      "avgStrideLength": 42.16857889248845,
+      "deviceId": 3319086716,
+      "minElevation": 1146.6827392578125,
+      "maxElevation": 2573.558837890625,
+      "avgElevation": 1868.2579649626132,
+      "maxDoubleCadence": 184.0,
+      "isElevationCorrected": true,
+      "isDecoDive": false,
+      "summarizedDiveInfo": {
+        "summarizedDiveGases": []
+      },
+      "maxVerticalSpeed": 1.6236136300223214,
+      "manufacturer": "GARMIN",
+      "locationName": "Chamonix-Mont-Blanc",
+      "lapCount": 8,
+      "endLatitude": 45.87695620022714,
+      "endLongitude": 6.858010226860642,
+      "isAtpActivity": false,
+      "minActivityLapDuration": 701.93798828125,
+      "splitSummaries": [],
+      "hasSplits": false,
+      "hasIntensityIntervals": false,
+      "isManualActivity": false,
+      "hasHeatMap": false,
+      "hrTimeInZone_1": 8814.601,
+      "hrTimeInZone_2": 0.0,
+      "hrTimeInZone_3": 0.0,
+      "hrTimeInZone_4": 0.0,
+      "hrTimeInZone_5": 0.0,
+      "endTimeGMT": "2026-08-10 09:32:37",
+      "qualifyingDive": false,
+      "activityUUID": "d14d85f8-534a-464d-890c-a8a257d2d38d",
+      "pr": false,
+      "favorite": false,
+      "purposeful": false,
+      "parent": false,
+      "decoDive": false,
+      "manualActivity": false,
+      "autoCalcCalories": false,
+      "elevationCorrected": true,
+      "atpActivity": false
+    }
+  ],
   "resting_heart_rate": null
 }

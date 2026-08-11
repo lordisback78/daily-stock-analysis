@@ -1,11 +1,11 @@
 {
-  "date": "2026-08-09",
+  "date": "2026-08-11",
   "errors": {},
   "sleep": {
     "dailySleepDTO": {
       "id": null,
       "userProfilePK": 86877926,
-      "calendarDate": "2026-08-09",
+      "calendarDate": "2026-08-11",
       "sleepTimeSeconds": null,
       "napTimeSeconds": null,
       "sleepWindowConfirmed": null,
@@ -32,77 +32,68 @@
   },
   "heart_rates": {
     "userProfilePK": 86877926,
-    "calendarDate": "2026-08-09",
-    "startTimestampGMT": "2026-08-08T22:00:00.0",
-    "endTimestampGMT": "2026-08-09T22:00:00.0",
-    "startTimestampLocal": "2026-08-09T00:00:00.0",
-    "endTimestampLocal": "2026-08-10T00:00:00.0",
+    "calendarDate": "2026-08-11",
+    "startTimestampGMT": null,
+    "endTimestampGMT": null,
+    "startTimestampLocal": null,
+    "endTimestampLocal": null,
     "maxHeartRate": null,
     "minHeartRate": null,
     "restingHeartRate": null,
     "lastSevenDaysAvgRestingHeartRate": null,
-    "heartRateValueDescriptors": null,
-    "heartRateValues": null
+    "heartRateValues": null,
+    "heartRateValueDescriptors": null
   },
   "hrv": {},
   "body_battery": [
     {
-      "date": "2026-08-09",
+      "date": "2026-08-11",
       "charged": null,
       "drained": null,
-      "startTimestampGMT": "2026-08-08T22:00:00.0",
-      "endTimestampGMT": "2026-08-09T22:00:00.0",
-      "startTimestampLocal": "2026-08-09T00:00:00.0",
-      "endTimestampLocal": "2026-08-10T00:00:00.0",
+      "startTimestampGMT": null,
+      "endTimestampGMT": null,
+      "startTimestampLocal": null,
+      "endTimestampLocal": null,
       "bodyBatteryValuesArray": [
         [
-          1786233600001,
+          1786406400001,
           null
         ],
         [
-          1786233600002,
+          1786406400002,
           null
         ],
         [
-          1786233600003,
+          1786406400003,
           null
         ],
         [
-          1786233600004,
+          1786406400004,
           null
         ],
         [
-          1786233600005,
+          1786406400005,
           null
         ],
         [
-          1786233600006,
+          1786406400006,
           null
         ]
       ],
-      "bodyBatteryValueDescriptorDTOList": [
-        {
-          "bodyBatteryValueDescriptorIndex": 0,
-          "bodyBatteryValueDescriptorKey": "timestamp"
-        },
-        {
-          "bodyBatteryValueDescriptorIndex": 1,
-          "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
-        }
-      ]
+      "bodyBatteryValueDescriptorDTOList": null
     }
   ],
   "stress": {
     "userProfilePK": 86877926,
-    "calendarDate": "2026-08-09",
-    "startTimestampGMT": "2026-08-08T22:00:00.0",
-    "endTimestampGMT": "2026-08-09T22:00:00.0",
-    "startTimestampLocal": "2026-08-09T00:00:00.0",
-    "endTimestampLocal": "2026-08-10T00:00:00.0",
+    "calendarDate": "2026-08-11",
+    "startTimestampGMT": null,
+    "endTimestampGMT": null,
+    "startTimestampLocal": null,
+    "endTimestampLocal": null,
     "maxStressLevel": null,
     "avgStressLevel": null,
-    "stressChartValueOffset": 1,
-    "stressChartYAxisOrigin": -1,
+    "stressChartValueOffset": null,
+    "stressChartYAxisOrigin": null,
     "stressValueDescriptorsDTOList": [],
     "stressValuesArray": []
   },
