@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-13",
+  "errors": {},
+  "sleep": {
+    "dailySleepDTO": {
+      "id": null,
+      "userProfilePK": 86877926,
+      "calendarDate": "2026-08-13",
+      "sleepTimeSeconds": null,
+      "napTimeSeconds": null,
+      "sleepWindowConfirmed": null,
+      "sleepWindowConfirmationType": null,
+      "sleepStartTimestampGMT": null,
+      "sleepEndTimestampGMT": null,
+      "sleepStartTimestampLocal": null,
+      "sleepEndTimestampLocal": null,
+      "autoSleepStartTimestampGMT": null,
+      "autoSleepEndTimestampGMT": null,
+      "sleepQualityTypePK": null,
+      "sleepResultTypePK": null,
+      "unmeasurableSleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "deviceRemCapable": false,
+      "retro": false
+    },
+    "sleepMovement": [],
+    "remSleepData": null,
+    "sleepLevels": []
+  },
+  "heart_rates": {
+    "userProfilePK": 86877926,
+    "calendarDate": "2026-08-13",
+    "startTimestampGMT": null,
+    "endTimestampGMT": null,
+    "startTimestampLocal": null,
+    "endTimestampLocal": null,
+    "maxHeartRate": null,
+    "minHeartRate": null,
+    "restingHeartRate": null,
+    "lastSevenDaysAvgRestingHeartRate": null,
+    "heartRateValueDescriptors": null,
+    "heartRateValues": null
+  },
+  "hrv": {},
+  "body_battery": [
+    {
+      "date": "2026-08-13",
+      "charged": null,
+      "drained": null,
+      "startTimestampGMT": null,
+      "endTimestampGMT": null,
+      "startTimestampLocal": null,
+      "endTimestampLocal": null,
+      "bodyBatteryValuesArray": [
+        [
+          1786579200001,
+          null
+        ],
+        [
+          1786579200002,
+          null
+        ],
+        [
+          1786579200003,
+          null
+        ],
+        [
+          1786579200004,
+          null
+        ],
+        [
+          1786579200005,
+          null
+        ],
+        [
+          1786579200006,
+          null
+        ]
+      ],
+      "bodyBatteryValueDescriptorDTOList": null
+    }
+  ],
+  "stress": {
+    "userProfilePK": 86877926,
+    "calendarDate": "2026-08-13",
+    "startTimestampGMT": null,
+    "endTimestampGMT": null,
+    "startTimestampLocal": null,
+    "endTimestampLocal": null,
+    "maxStressLevel": null,
+    "avgStressLevel": null,
+    "stressChartValueOffset": null,
+    "stressChartYAxisOrigin": null,
+    "stressValueDescriptorsDTOList": [],
+    "stressValuesArray": []
+  },
+  "training_readiness": [],
+  "activities": [],
+  "resting_heart_rate": null
+}
