@@ -41,48 +41,11 @@
     "minHeartRate": null,
     "restingHeartRate": null,
     "lastSevenDaysAvgRestingHeartRate": null,
-    "heartRateValueDescriptors": null,
-    "heartRateValues": null
+    "heartRateValues": null,
+    "heartRateValueDescriptors": null
   },
   "hrv": {},
-  "body_battery": [
-    {
-      "date": "2026-08-13",
-      "charged": null,
-      "drained": null,
-      "startTimestampGMT": null,
-      "endTimestampGMT": null,
-      "startTimestampLocal": null,
-      "endTimestampLocal": null,
-      "bodyBatteryValuesArray": [
-        [
-          1786579200001,
-          null
-        ],
-        [
-          1786579200002,
-          null
-        ],
-        [
-          1786579200003,
-          null
-        ],
-        [
-          1786579200004,
-          null
-        ],
-        [
-          1786579200005,
-          null
-        ],
-        [
-          1786579200006,
-          null
-        ]
-      ],
-      "bodyBatteryValueDescriptorDTOList": null
-    }
-  ],
+  "body_battery": [],
   "stress": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-13",
@@ -98,6 +61,140 @@
     "stressValuesArray": []
   },
   "training_readiness": [],
-  "activities": [],
+  "activities": [
+    {
+      "activityId": 23965397856,
+      "activityName": "Les Houches Randonn\u00e9e",
+      "startTimeLocal": "2026-08-13 18:08:31",
+      "startTimeGMT": "2026-08-13 16:08:31",
+      "activityType": {
+        "typeId": 3,
+        "typeKey": "hiking",
+        "parentTypeId": 17,
+        "isHidden": false,
+        "restricted": false,
+        "trimmable": true
+      },
+      "eventType": {
+        "typeId": 9,
+        "typeKey": "uncategorized",
+        "sortOrder": 10
+      },
+      "isFavorite": false,
+      "isPR": false,
+      "isAutoCalcCalories": false,
+      "isParent": false,
+      "distance": 4233.97998046875,
+      "duration": 3223.89892578125,
+      "elapsedDuration": 3223.89892578125,
+      "movingDuration": 3183.3270263671875,
+      "elevationGain": 737.336669921875,
+      "elevationLoss": 0.0,
+      "averageSpeed": 1.3129999637603758,
+      "maxSpeed": 4.171000003814697,
+      "startLatitude": 45.91059738770127,
+      "startLongitude": 6.789744822308421,
+      "hasPolyline": true,
+      "hasImages": false,
+      "ownerId": 86877926,
+      "ownerDisplayName": "d0619bee-6605-42ab-9b53-58eed098da06",
+      "ownerFullName": "Luc",
+      "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/58175172-8c79-4a46-b02d-d75fb82cba59-86877926.png",
+      "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9c4ffeb3-e0c9-48e6-a4fa-a1b701a56ac0-86877926.png",
+      "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/daeb9233-1fda-41d4-a040-e71206c67944-86877926.png",
+      "calories": 825.0,
+      "averageHR": 159.0,
+      "maxHR": 182.0,
+      "averageRunningCadenceInStepsPerMinute": 109.09375,
+      "maxRunningCadenceInStepsPerMinute": 170.0,
+      "steps": 5578,
+      "userRoles": [
+        "SCOPE_GOLF_API_READ",
+        "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+        "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+        "SCOPE_ATP_READ",
+        "SCOPE_DIVE_API_WRITE",
+        "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+        "SCOPE_DIVE_API_READ",
+        "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_READ",
+        "SCOPE_CONNECT_WRITE",
+        "SCOPE_COMMUNITY_COURSE_WRITE",
+        "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+        "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+        "SCOPE_MESSAGE_GENERATION_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+        "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+        "SCOPE_ACTIVITY_DETECTION_READ",
+        "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+        "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+        "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+        "SCOPE_CONNECT_READ",
+        "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+        "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+        "SCOPE_ATP_WRITE",
+        "ROLE_CONNECTUSER",
+        "ROLE_FITNESS_USER",
+        "ROLE_WELLNESS_USER",
+        "ROLE_OUTDOOR_USER",
+        "ROLE_MARINE_USER",
+        "ROLE_DIVE_USER",
+        "ROLE_TACX_APP_USER",
+        "ROLE_GARMIN_USER"
+      ],
+      "privacy": {
+        "typeId": 2,
+        "typeKey": "private"
+      },
+      "userPro": false,
+      "hasVideo": false,
+      "isPurposeful": false,
+      "timeZoneId": 124,
+      "beginTimestamp": 1786637311000,
+      "sportTypeId": 17,
+      "aerobicTrainingEffect": 4.400000095367432,
+      "avgStrideLength": 71.68196939896393,
+      "deviceId": 3319086716,
+      "minElevation": 1464.199951171875,
+      "maxElevation": 2205.35205078125,
+      "avgElevation": 1828.0008929256976,
+      "maxDoubleCadence": 170.0,
+      "isElevationCorrected": true,
+      "isDecoDive": false,
+      "summarizedDiveInfo": {
+        "summarizedDiveGases": []
+      },
+      "maxVerticalSpeed": 2.14892578125,
+      "manufacturer": "GARMIN",
+      "locationName": "Les Houches",
+      "lapCount": 5,
+      "endLatitude": 45.920131551101804,
+      "endLongitude": 6.8034060671925545,
+      "isAtpActivity": false,
+      "minActivityLapDuration": 231.24000549316406,
+      "splitSummaries": [],
+      "hasSplits": false,
+      "hasIntensityIntervals": false,
+      "isManualActivity": false,
+      "hasHeatMap": false,
+      "hrTimeInZone_1": 7.999,
+      "hrTimeInZone_2": 103.183,
+      "hrTimeInZone_3": 700.764,
+      "hrTimeInZone_4": 2209.543,
+      "hrTimeInZone_5": 188.987,
+      "endTimeGMT": "2026-08-13 17:02:14",
+      "qualifyingDive": false,
+      "activityUUID": "91f10af1-7147-4c54-8b20-c0f64d22c8a1",
+      "pr": false,
+      "favorite": false,
+      "purposeful": false,
+      "manualActivity": false,
+      "autoCalcCalories": false,
+      "parent": false,
+      "decoDive": false,
+      "elevationCorrected": true,
+      "atpActivity": false
+    }
+  ],
   "resting_heart_rate": null
 }
