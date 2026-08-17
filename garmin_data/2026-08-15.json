@@ -41,48 +41,11 @@
     "minHeartRate": null,
     "restingHeartRate": null,
     "lastSevenDaysAvgRestingHeartRate": null,
-    "heartRateValues": null,
-    "heartRateValueDescriptors": null
+    "heartRateValueDescriptors": null,
+    "heartRateValues": null
   },
   "hrv": {},
-  "body_battery": [
-    {
-      "date": "2026-08-15",
-      "charged": null,
-      "drained": null,
-      "startTimestampGMT": null,
-      "endTimestampGMT": null,
-      "startTimestampLocal": null,
-      "endTimestampLocal": null,
-      "bodyBatteryValuesArray": [
-        [
-          1786752000001,
-          null
-        ],
-        [
-          1786752000002,
-          null
-        ],
-        [
-          1786752000003,
-          null
-        ],
-        [
-          1786752000004,
-          null
-        ],
-        [
-          1786752000005,
-          null
-        ],
-        [
-          1786752000006,
-          null
-        ]
-      ],
-      "bodyBatteryValueDescriptorDTOList": null
-    }
-  ],
+  "body_battery": [],
   "stress": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-15",
@@ -98,6 +61,132 @@
     "stressValuesArray": []
   },
   "training_readiness": [],
-  "activities": [],
+  "activities": [
+    {
+      "activityId": 24001495651,
+      "activityName": "Course \u00e0 pied",
+      "startTimeLocal": "2026-08-15 08:26:05",
+      "startTimeGMT": "2026-08-15 06:26:05",
+      "activityType": {
+        "typeId": 1,
+        "typeKey": "running",
+        "parentTypeId": 17,
+        "isHidden": false,
+        "trimmable": true,
+        "restricted": false
+      },
+      "eventType": {
+        "typeId": 9,
+        "typeKey": "uncategorized",
+        "sortOrder": 10
+      },
+      "isFavorite": false,
+      "isPR": false,
+      "isAutoCalcCalories": false,
+      "isParent": false,
+      "distance": 5218.9599609375,
+      "duration": 1769.3470458984375,
+      "elapsedDuration": 1769.3470458984375,
+      "movingDuration": 1768.566993713379,
+      "averageSpeed": 2.9500000476837154,
+      "maxSpeed": 3.322000026702881,
+      "hasPolyline": false,
+      "hasImages": false,
+      "ownerId": 86877926,
+      "ownerDisplayName": "d0619bee-6605-42ab-9b53-58eed098da06",
+      "ownerFullName": "Luc",
+      "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/58175172-8c79-4a46-b02d-d75fb82cba59-86877926.png",
+      "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9c4ffeb3-e0c9-48e6-a4fa-a1b701a56ac0-86877926.png",
+      "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/daeb9233-1fda-41d4-a040-e71206c67944-86877926.png",
+      "calories": 400.0,
+      "averageHR": 145.0,
+      "maxHR": 169.0,
+      "averageRunningCadenceInStepsPerMinute": 160.734375,
+      "maxRunningCadenceInStepsPerMinute": 184.0,
+      "steps": 4726,
+      "userRoles": [
+        "SCOPE_GOLF_API_READ",
+        "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+        "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+        "SCOPE_ATP_READ",
+        "SCOPE_DIVE_API_WRITE",
+        "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+        "SCOPE_DIVE_API_READ",
+        "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_READ",
+        "SCOPE_CONNECT_WRITE",
+        "SCOPE_COMMUNITY_COURSE_WRITE",
+        "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+        "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+        "SCOPE_MESSAGE_GENERATION_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+        "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+        "SCOPE_ACTIVITY_DETECTION_READ",
+        "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+        "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+        "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+        "SCOPE_CONNECT_READ",
+        "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+        "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+        "SCOPE_ATP_WRITE",
+        "ROLE_CONNECTUSER",
+        "ROLE_FITNESS_USER",
+        "ROLE_WELLNESS_USER",
+        "ROLE_OUTDOOR_USER",
+        "ROLE_MARINE_USER",
+        "ROLE_DIVE_USER",
+        "ROLE_TACX_APP_USER",
+        "ROLE_GARMIN_USER"
+      ],
+      "privacy": {
+        "typeId": 2,
+        "typeKey": "private"
+      },
+      "userPro": false,
+      "hasVideo": false,
+      "isPurposeful": false,
+      "timeZoneId": 124,
+      "beginTimestamp": 1786775165000,
+      "sportTypeId": 1,
+      "aerobicTrainingEffect": 3.0,
+      "avgStrideLength": 110.10489664212824,
+      "deviceId": 3319086716,
+      "maxDoubleCadence": 184.0,
+      "isElevationCorrected": false,
+      "isDecoDive": false,
+      "summarizedDiveInfo": {
+        "summarizedDiveGases": []
+      },
+      "manufacturer": "GARMIN",
+      "lapCount": 6,
+      "isAtpActivity": false,
+      "minActivityLapDuration": 75.62799835205078,
+      "splitSummaries": [],
+      "hasSplits": false,
+      "hasIntensityIntervals": false,
+      "isManualActivity": false,
+      "hasHeatMap": false,
+      "fastestSplit_1000": 326.25799560546875,
+      "fastestSplit_1609": 529.4600219726562,
+      "fastestSplit_5000": 1685.614990234375,
+      "hrTimeInZone_1": 23.999,
+      "hrTimeInZone_2": 599.81,
+      "hrTimeInZone_3": 312.977,
+      "hrTimeInZone_4": 815.01,
+      "hrTimeInZone_5": 0.0,
+      "endTimeGMT": "2026-08-15 06:55:34",
+      "qualifyingDive": false,
+      "activityUUID": "e0f70abc-e0d8-4a4a-b26c-64218fe14d71",
+      "purposeful": false,
+      "pr": false,
+      "favorite": false,
+      "parent": false,
+      "decoDive": false,
+      "manualActivity": false,
+      "autoCalcCalories": false,
+      "elevationCorrected": false,
+      "atpActivity": false
+    }
+  ],
   "resting_heart_rate": null
 }
