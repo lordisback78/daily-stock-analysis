@@ -183,14 +183,14 @@
       "qualifyingDive": false,
       "activityUUID": "74a66133-8091-4d26-b711-b2d1ceaf53be",
       "pr": false,
+      "favorite": false,
+      "purposeful": false,
+      "parent": false,
+      "decoDive": false,
+      "manualActivity": false,
       "autoCalcCalories": false,
       "elevationCorrected": true,
-      "atpActivity": false,
-      "decoDive": false,
-      "purposeful": false,
-      "manualActivity": false,
-      "favorite": false,
-      "parent": false
+      "atpActivity": false
     }
   ],
   "resting_heart_rate": null
