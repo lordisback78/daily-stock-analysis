@@ -33,16 +33,326 @@
   "heart_rates": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-21",
-    "startTimestampGMT": null,
-    "endTimestampGMT": null,
-    "startTimestampLocal": null,
-    "endTimestampLocal": null,
-    "maxHeartRate": null,
-    "minHeartRate": null,
-    "restingHeartRate": null,
-    "lastSevenDaysAvgRestingHeartRate": null,
-    "heartRateValueDescriptors": null,
-    "heartRateValues": null
+    "startTimestampGMT": "2026-08-20T22:00:00.0",
+    "endTimestampGMT": "2026-08-21T09:51:00.0",
+    "startTimestampLocal": "2026-08-21T00:00:00.0",
+    "endTimestampLocal": "2026-08-22T00:00:00.0",
+    "maxHeartRate": 146,
+    "minHeartRate": 47,
+    "restingHeartRate": 46,
+    "lastSevenDaysAvgRestingHeartRate": 56,
+    "heartRateValueDescriptors": [
+      {
+        "index": 0,
+        "key": "timestamp"
+      },
+      {
+        "index": 1,
+        "key": "heartrate"
+      }
+    ],
+    "heartRateValues": [
+      [
+        1787263200000,
+        60
+      ],
+      [
+        1787263320000,
+        51
+      ],
+      [
+        1787263440000,
+        48
+      ],
+      [
+        1787263560000,
+        57
+      ],
+      [
+        1787263680000,
+        62
+      ],
+      [
+        1787263800000,
+        63
+      ],
+      [
+        1787263920000,
+        59
+      ],
+      [
+        1787264040000,
+        50
+      ],
+      [
+        1787264160000,
+        49
+      ],
+      [
+        1787264280000,
+        48
+      ],
+      [
+        1787264400000,
+        55
+      ],
+      [
+        1787264520000,
+        60
+      ],
+      [
+        1787264640000,
+        55
+      ],
+      [
+        1787264760000,
+        66
+      ],
+      [
+        1787264880000,
+        65
+      ],
+      [
+        1787265000000,
+        65
+      ],
+      [
+        1787265120000,
+        59
+      ],
+      [
+        1787265240000,
+        62
+      ],
+      [
+        1787265360000,
+        59
+      ],
+      [
+        1787265480000,
+        56
+      ],
+      [
+        1787265600000,
+        64
+      ],
+      [
+        1787265720000,
+        60
+      ],
+      [
+        1787265840000,
+        60
+      ],
+      [
+        1787265960000,
+        69
+      ],
+      [
+        1787266080000,
+        53
+      ],
+      [
+        1787266200000,
+        50
+      ],
+      [
+        1787266320000,
+        58
+      ],
+      [
+        1787266440000,
+        49
+      ],
+      [
+        1787266560000,
+        49
+      ],
+      [
+        1787266680000,
+        48
+      ],
+      [
+        1787266800000,
+        49
+      ],
+      [
+        1787266920000,
+        49
+      ],
+      [
+        1787267040000,
+        49
+      ],
+      [
+        1787267160000,
+        49
+      ],
+      [
+        1787267280000,
+        50
+      ],
+      [
+        1787267400000,
+        48
+      ],
+      [
+        1787267520000,
+        47
+      ],
+      [
+        1787267640000,
+        49
+      ],
+      [
+        1787267760000,
+        48
+      ],
+      [
+        1787267880000,
+        48
+      ],
+      [
+        1787268000000,
+        48
+      ],
+      [
+        1787268120000,
+        48
+      ],
+      [
+        1787268240000,
+        48
+      ],
+      [
+        1787268360000,
+        59
+      ],
+      [
+        1787268480000,
+        52
+      ],
+      [
+        1787268600000,
+        63
+      ],
+      [
+        1787268720000,
+        null
+      ],
+      [
+        1787302560000,
+        62
+      ],
+      [
+        1787302680000,
+        72
+      ],
+      [
+        1787302800000,
+        78
+      ],
+      [
+        1787302920000,
+        113
+      ],
+      [
+        1787303040000,
+        107
+      ],
+      [
+        1787303160000,
+        115
+      ],
+      [
+        1787303280000,
+        128
+      ],
+      [
+        1787303400000,
+        138
+      ],
+      [
+        1787303520000,
+        133
+      ],
+      [
+        1787303640000,
+        143
+      ],
+      [
+        1787303760000,
+        138
+      ],
+      [
+        1787303880000,
+        137
+      ],
+      [
+        1787304000000,
+        132
+      ],
+      [
+        1787304120000,
+        134
+      ],
+      [
+        1787304240000,
+        134
+      ],
+      [
+        1787304360000,
+        139
+      ],
+      [
+        1787304480000,
+        129
+      ],
+      [
+        1787304600000,
+        126
+      ],
+      [
+        1787304720000,
+        122
+      ],
+      [
+        1787304840000,
+        146
+      ],
+      [
+        1787304960000,
+        116
+      ],
+      [
+        1787305080000,
+        118
+      ],
+      [
+        1787305200000,
+        110
+      ],
+      [
+        1787305320000,
+        77
+      ],
+      [
+        1787305440000,
+        69
+      ],
+      [
+        1787305560000,
+        65
+      ],
+      [
+        1787305680000,
+        62
+      ],
+      [
+        1787305800000,
+        75
+      ]
+    ]
   },
   "hrv": {},
   "body_battery": [
@@ -50,10 +360,10 @@
       "date": "2026-08-21",
       "charged": null,
       "drained": null,
-      "startTimestampGMT": null,
-      "endTimestampGMT": null,
-      "startTimestampLocal": null,
-      "endTimestampLocal": null,
+      "startTimestampGMT": "2026-08-20T22:00:00.0",
+      "endTimestampGMT": "2026-08-21T09:51:00.0",
+      "startTimestampLocal": "2026-08-21T00:00:00.0",
+      "endTimestampLocal": "2026-08-21T11:51:00.0",
       "bodyBatteryValuesArray": [
         [
           1787270400001,
@@ -80,24 +390,171 @@
           null
         ]
       ],
-      "bodyBatteryValueDescriptorDTOList": null
+      "bodyBatteryValueDescriptorDTOList": [
+        {
+          "bodyBatteryValueDescriptorIndex": 0,
+          "bodyBatteryValueDescriptorKey": "timestamp"
+        },
+        {
+          "bodyBatteryValueDescriptorIndex": 1,
+          "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+        }
+      ]
     }
   ],
   "stress": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-21",
-    "startTimestampGMT": null,
-    "endTimestampGMT": null,
-    "startTimestampLocal": null,
-    "endTimestampLocal": null,
+    "startTimestampGMT": "2026-08-20T22:00:00.0",
+    "endTimestampGMT": "2026-08-21T09:51:00.0",
+    "startTimestampLocal": "2026-08-21T00:00:00.0",
+    "endTimestampLocal": "2026-08-21T11:51:00.0",
     "maxStressLevel": null,
     "avgStressLevel": null,
-    "stressChartValueOffset": null,
-    "stressChartYAxisOrigin": null,
+    "stressChartValueOffset": 1,
+    "stressChartYAxisOrigin": -1,
     "stressValueDescriptorsDTOList": [],
     "stressValuesArray": []
   },
   "training_readiness": [],
-  "activities": [],
-  "resting_heart_rate": null
+  "activities": [
+    {
+      "activityId": 24058616462,
+      "activityName": "Marseille Course \u00e0 pied",
+      "startTimeLocal": "2026-08-21 10:59:47",
+      "startTimeGMT": "2026-08-21 08:59:47",
+      "activityType": {
+        "typeId": 1,
+        "typeKey": "running",
+        "parentTypeId": 17,
+        "isHidden": false,
+        "restricted": false,
+        "trimmable": true
+      },
+      "eventType": {
+        "typeId": 9,
+        "typeKey": "uncategorized",
+        "sortOrder": 10
+      },
+      "isFavorite": false,
+      "isPR": false,
+      "isAutoCalcCalories": false,
+      "isParent": false,
+      "distance": 6259.77978515625,
+      "duration": 2004.47900390625,
+      "elapsedDuration": 2055.431884765625,
+      "movingDuration": 2002.8190002441406,
+      "elevationGain": 38.5046501159668,
+      "elevationLoss": 45.80198287963867,
+      "averageSpeed": 3.122999906539917,
+      "maxSpeed": 4.160999774932861,
+      "startLatitude": 43.30190378241241,
+      "startLongitude": 5.398750053718686,
+      "hasPolyline": true,
+      "hasImages": false,
+      "ownerId": 86877926,
+      "ownerDisplayName": "d0619bee-6605-42ab-9b53-58eed098da06",
+      "ownerFullName": "Luc",
+      "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/58175172-8c79-4a46-b02d-d75fb82cba59-86877926.png",
+      "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9c4ffeb3-e0c9-48e6-a4fa-a1b701a56ac0-86877926.png",
+      "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/daeb9233-1fda-41d4-a040-e71206c67944-86877926.png",
+      "calories": 354.0,
+      "averageHR": 129.0,
+      "maxHR": 158.0,
+      "averageRunningCadenceInStepsPerMinute": 159.65625,
+      "maxRunningCadenceInStepsPerMinute": 172.0,
+      "steps": 5298,
+      "userRoles": [
+        "SCOPE_GOLF_API_READ",
+        "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+        "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+        "SCOPE_ATP_READ",
+        "SCOPE_DIVE_API_WRITE",
+        "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+        "SCOPE_DIVE_API_READ",
+        "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_READ",
+        "SCOPE_CONNECT_WRITE",
+        "SCOPE_COMMUNITY_COURSE_WRITE",
+        "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+        "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+        "SCOPE_MESSAGE_GENERATION_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+        "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+        "SCOPE_ACTIVITY_DETECTION_READ",
+        "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+        "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+        "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+        "SCOPE_CONNECT_READ",
+        "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+        "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+        "SCOPE_ATP_WRITE",
+        "ROLE_CONNECTUSER",
+        "ROLE_FITNESS_USER",
+        "ROLE_WELLNESS_USER",
+        "ROLE_OUTDOOR_USER",
+        "ROLE_MARINE_USER",
+        "ROLE_DIVE_USER",
+        "ROLE_TACX_APP_USER",
+        "ROLE_GARMIN_USER"
+      ],
+      "privacy": {
+        "typeId": 2,
+        "typeKey": "private"
+      },
+      "userPro": false,
+      "hasVideo": false,
+      "isPurposeful": false,
+      "timeZoneId": 124,
+      "beginTimestamp": 1787302787000,
+      "sportTypeId": 1,
+      "aerobicTrainingEffect": 2.0999999046325684,
+      "avgStrideLength": 117.30672428424238,
+      "vO2MaxValue": 60.0,
+      "deviceId": 3319086716,
+      "minElevation": 31.426481246948242,
+      "maxElevation": 59.963661193847656,
+      "avgElevation": 45.38346034724538,
+      "maxDoubleCadence": 172.0,
+      "isElevationCorrected": true,
+      "isDecoDive": false,
+      "summarizedDiveInfo": {
+        "summarizedDiveGases": []
+      },
+      "maxVerticalSpeed": 0.638397216796875,
+      "manufacturer": "GARMIN",
+      "locationName": "Marseille",
+      "lapCount": 7,
+      "endLatitude": 43.30200729891658,
+      "endLongitude": 5.39363675750792,
+      "isAtpActivity": false,
+      "minActivityLapDuration": 61.90599822998047,
+      "splitSummaries": [],
+      "hasSplits": false,
+      "hasIntensityIntervals": false,
+      "isManualActivity": false,
+      "hasHeatMap": false,
+      "fastestSplit_1000": 279.34600830078125,
+      "fastestSplit_1609": 462.50201416015625,
+      "fastestSplit_5000": 1559.97705078125,
+      "hrTimeInZone_1": 372.564,
+      "hrTimeInZone_2": 752.86,
+      "hrTimeInZone_3": 838.726,
+      "hrTimeInZone_4": 24.069,
+      "hrTimeInZone_5": 0.0,
+      "endTimeGMT": "2026-08-21 09:34:02",
+      "qualifyingDive": false,
+      "activityUUID": "f722cb2c-17fa-4be4-a614-d4d77a25570f",
+      "pr": false,
+      "decoDive": false,
+      "elevationCorrected": true,
+      "atpActivity": false,
+      "purposeful": false,
+      "manualActivity": false,
+      "parent": false,
+      "autoCalcCalories": false,
+      "favorite": false
+    }
+  ],
+  "resting_heart_rate": 46
 }
