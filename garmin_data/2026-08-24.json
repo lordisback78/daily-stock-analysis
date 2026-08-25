@@ -45,44 +45,7 @@
     "heartRateValues": null
   },
   "hrv": {},
-  "body_battery": [
-    {
-      "date": "2026-08-24",
-      "charged": null,
-      "drained": null,
-      "startTimestampGMT": null,
-      "endTimestampGMT": null,
-      "startTimestampLocal": null,
-      "endTimestampLocal": null,
-      "bodyBatteryValuesArray": [
-        [
-          1787529600001,
-          null
-        ],
-        [
-          1787529600002,
-          null
-        ],
-        [
-          1787529600003,
-          null
-        ],
-        [
-          1787529600004,
-          null
-        ],
-        [
-          1787529600005,
-          null
-        ],
-        [
-          1787529600006,
-          null
-        ]
-      ],
-      "bodyBatteryValueDescriptorDTOList": null
-    }
-  ],
+  "body_battery": [],
   "stress": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-24",
@@ -98,6 +61,144 @@
     "stressValuesArray": []
   },
   "training_readiness": [],
-  "activities": [],
+  "activities": [
+    {
+      "activityId": 24094078689,
+      "activityName": "Versailles Course \u00e0 pied",
+      "startTimeLocal": "2026-08-24 08:12:04",
+      "startTimeGMT": "2026-08-24 06:12:04",
+      "activityType": {
+        "typeId": 1,
+        "typeKey": "running",
+        "parentTypeId": 17,
+        "isHidden": false,
+        "restricted": false,
+        "trimmable": true
+      },
+      "eventType": {
+        "typeId": 9,
+        "typeKey": "uncategorized",
+        "sortOrder": 10
+      },
+      "isFavorite": false,
+      "isPR": false,
+      "isAutoCalcCalories": false,
+      "isParent": false,
+      "distance": 8448.9501953125,
+      "duration": 2697.7529296875,
+      "elapsedDuration": 2723.3779296875,
+      "movingDuration": 2687.2780151367188,
+      "elevationGain": 91.48860931396484,
+      "elevationLoss": 90.18524932861328,
+      "averageSpeed": 3.131999969482422,
+      "maxSpeed": 3.6670000553131104,
+      "startLatitude": 48.788860626518726,
+      "startLongitude": 2.1246754936873913,
+      "hasPolyline": true,
+      "hasImages": false,
+      "ownerId": 86877926,
+      "ownerDisplayName": "d0619bee-6605-42ab-9b53-58eed098da06",
+      "ownerFullName": "Luc",
+      "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/58175172-8c79-4a46-b02d-d75fb82cba59-86877926.png",
+      "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9c4ffeb3-e0c9-48e6-a4fa-a1b701a56ac0-86877926.png",
+      "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/daeb9233-1fda-41d4-a040-e71206c67944-86877926.png",
+      "calories": 784.0,
+      "averageHR": 177.0,
+      "maxHR": 194.0,
+      "averageRunningCadenceInStepsPerMinute": 160.828125,
+      "maxRunningCadenceInStepsPerMinute": 225.0,
+      "steps": 7162,
+      "userRoles": [
+        "SCOPE_GOLF_API_READ",
+        "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+        "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+        "SCOPE_ATP_READ",
+        "SCOPE_DIVE_API_WRITE",
+        "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+        "SCOPE_DIVE_API_READ",
+        "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_READ",
+        "SCOPE_CONNECT_WRITE",
+        "SCOPE_COMMUNITY_COURSE_WRITE",
+        "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+        "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+        "SCOPE_MESSAGE_GENERATION_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+        "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+        "SCOPE_ACTIVITY_DETECTION_READ",
+        "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+        "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+        "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+        "SCOPE_CONNECT_READ",
+        "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+        "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+        "SCOPE_ATP_WRITE",
+        "ROLE_CONNECTUSER",
+        "ROLE_FITNESS_USER",
+        "ROLE_WELLNESS_USER",
+        "ROLE_OUTDOOR_USER",
+        "ROLE_MARINE_USER",
+        "ROLE_DIVE_USER",
+        "ROLE_TACX_APP_USER",
+        "ROLE_GARMIN_USER"
+      ],
+      "privacy": {
+        "typeId": 2,
+        "typeKey": "private"
+      },
+      "userPro": false,
+      "hasVideo": false,
+      "isPurposeful": false,
+      "timeZoneId": 124,
+      "beginTimestamp": 1787551924000,
+      "sportTypeId": 1,
+      "aerobicTrainingEffect": 5.0,
+      "avgStrideLength": 116.84382012445909,
+      "vO2MaxValue": 55.0,
+      "deviceId": 3319086716,
+      "minElevation": 111.0,
+      "maxElevation": 181.01881408691406,
+      "avgElevation": 137.8695040268946,
+      "maxDoubleCadence": 225.0,
+      "isElevationCorrected": true,
+      "isDecoDive": false,
+      "summarizedDiveInfo": {
+        "summarizedDiveGases": []
+      },
+      "maxVerticalSpeed": 1.0253448486328125,
+      "manufacturer": "GARMIN",
+      "locationName": "Versailles",
+      "lapCount": 9,
+      "endLatitude": 48.78885358572006,
+      "endLongitude": 2.124346923083067,
+      "isAtpActivity": false,
+      "minActivityLapDuration": 143.91200256347656,
+      "splitSummaries": [],
+      "hasSplits": false,
+      "hasIntensityIntervals": false,
+      "isManualActivity": false,
+      "hasHeatMap": false,
+      "fastestSplit_1000": 298.2309875488281,
+      "fastestSplit_1609": 487.9010009765625,
+      "fastestSplit_5000": 1546.0560302734375,
+      "hrTimeInZone_1": 0.0,
+      "hrTimeInZone_2": 0.0,
+      "hrTimeInZone_3": 0.0,
+      "hrTimeInZone_4": 1057.277,
+      "hrTimeInZone_5": 1645.379,
+      "endTimeGMT": "2026-08-24 06:57:27",
+      "qualifyingDive": false,
+      "activityUUID": "c65ee752-fffa-468b-82cf-3a211c0b02a7",
+      "decoDive": false,
+      "elevationCorrected": true,
+      "atpActivity": false,
+      "autoCalcCalories": false,
+      "favorite": false,
+      "purposeful": false,
+      "manualActivity": false,
+      "pr": false,
+      "parent": false
+    }
+  ],
   "resting_heart_rate": null
 }
