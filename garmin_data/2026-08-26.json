@@ -33,16 +33,250 @@
   "heart_rates": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-26",
-    "startTimestampGMT": null,
-    "endTimestampGMT": null,
-    "startTimestampLocal": null,
-    "endTimestampLocal": null,
-    "maxHeartRate": null,
-    "minHeartRate": null,
-    "restingHeartRate": null,
-    "lastSevenDaysAvgRestingHeartRate": null,
-    "heartRateValueDescriptors": null,
-    "heartRateValues": null
+    "startTimestampGMT": "2026-08-25T22:00:00.0",
+    "endTimestampGMT": "2026-08-26T07:51:00.0",
+    "startTimestampLocal": "2026-08-26T00:00:00.0",
+    "endTimestampLocal": "2026-08-27T00:00:00.0",
+    "maxHeartRate": 175,
+    "minHeartRate": 76,
+    "restingHeartRate": 75,
+    "lastSevenDaysAvgRestingHeartRate": 50,
+    "heartRateValueDescriptors": [
+      {
+        "index": 0,
+        "key": "timestamp"
+      },
+      {
+        "index": 1,
+        "key": "heartrate"
+      }
+    ],
+    "heartRateValues": [
+      [
+        1787695200000,
+        null
+      ],
+      [
+        1787722680000,
+        77
+      ],
+      [
+        1787722800000,
+        81
+      ],
+      [
+        1787722920000,
+        81
+      ],
+      [
+        1787723040000,
+        81
+      ],
+      [
+        1787723160000,
+        80
+      ],
+      [
+        1787723280000,
+        82
+      ],
+      [
+        1787723400000,
+        89
+      ],
+      [
+        1787723520000,
+        80
+      ],
+      [
+        1787723640000,
+        79
+      ],
+      [
+        1787723760000,
+        78
+      ],
+      [
+        1787723880000,
+        88
+      ],
+      [
+        1787724000000,
+        85
+      ],
+      [
+        1787724120000,
+        93
+      ],
+      [
+        1787724240000,
+        81
+      ],
+      [
+        1787724360000,
+        80
+      ],
+      [
+        1787724480000,
+        83
+      ],
+      [
+        1787724600000,
+        79
+      ],
+      [
+        1787724720000,
+        87
+      ],
+      [
+        1787724840000,
+        123
+      ],
+      [
+        1787724960000,
+        140
+      ],
+      [
+        1787725080000,
+        133
+      ],
+      [
+        1787725200000,
+        150
+      ],
+      [
+        1787725320000,
+        132
+      ],
+      [
+        1787725440000,
+        147
+      ],
+      [
+        1787725560000,
+        157
+      ],
+      [
+        1787725680000,
+        161
+      ],
+      [
+        1787725800000,
+        163
+      ],
+      [
+        1787725920000,
+        157
+      ],
+      [
+        1787726040000,
+        168
+      ],
+      [
+        1787726160000,
+        172
+      ],
+      [
+        1787726280000,
+        173
+      ],
+      [
+        1787726400000,
+        175
+      ],
+      [
+        1787726520000,
+        160
+      ],
+      [
+        1787726640000,
+        159
+      ],
+      [
+        1787726760000,
+        156
+      ],
+      [
+        1787726880000,
+        157
+      ],
+      [
+        1787727000000,
+        168
+      ],
+      [
+        1787727120000,
+        166
+      ],
+      [
+        1787727240000,
+        174
+      ],
+      [
+        1787727360000,
+        166
+      ],
+      [
+        1787727480000,
+        159
+      ],
+      [
+        1787727600000,
+        125
+      ],
+      [
+        1787727720000,
+        128
+      ],
+      [
+        1787727840000,
+        116
+      ],
+      [
+        1787727960000,
+        114
+      ],
+      [
+        1787728080000,
+        125
+      ],
+      [
+        1787728200000,
+        118
+      ],
+      [
+        1787728320000,
+        110
+      ],
+      [
+        1787728440000,
+        107
+      ],
+      [
+        1787728560000,
+        96
+      ],
+      [
+        1787728680000,
+        92
+      ],
+      [
+        1787728800000,
+        88
+      ],
+      [
+        1787728920000,
+        null
+      ],
+      [
+        1787730480000,
+        76
+      ],
+      [
+        1787730600000,
+        86
+      ]
+    ]
   },
   "hrv": {},
   "body_battery": [
@@ -50,10 +284,10 @@
       "date": "2026-08-26",
       "charged": null,
       "drained": null,
-      "startTimestampGMT": null,
-      "endTimestampGMT": null,
-      "startTimestampLocal": null,
-      "endTimestampLocal": null,
+      "startTimestampGMT": "2026-08-25T22:00:00.0",
+      "endTimestampGMT": "2026-08-26T07:51:00.0",
+      "startTimestampLocal": "2026-08-26T00:00:00.0",
+      "endTimestampLocal": "2026-08-26T09:51:00.0",
       "bodyBatteryValuesArray": [
         [
           1787702400001,
@@ -80,24 +314,298 @@
           null
         ]
       ],
-      "bodyBatteryValueDescriptorDTOList": null
+      "bodyBatteryValueDescriptorDTOList": [
+        {
+          "bodyBatteryValueDescriptorIndex": 0,
+          "bodyBatteryValueDescriptorKey": "timestamp"
+        },
+        {
+          "bodyBatteryValueDescriptorIndex": 1,
+          "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+        }
+      ]
     }
   ],
   "stress": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-26",
-    "startTimestampGMT": null,
-    "endTimestampGMT": null,
-    "startTimestampLocal": null,
-    "endTimestampLocal": null,
+    "startTimestampGMT": "2026-08-25T22:00:00.0",
+    "endTimestampGMT": "2026-08-26T07:51:00.0",
+    "startTimestampLocal": "2026-08-26T00:00:00.0",
+    "endTimestampLocal": "2026-08-26T09:51:00.0",
     "maxStressLevel": null,
     "avgStressLevel": null,
-    "stressChartValueOffset": null,
-    "stressChartYAxisOrigin": null,
+    "stressChartValueOffset": 1,
+    "stressChartYAxisOrigin": -1,
     "stressValueDescriptorsDTOList": [],
     "stressValuesArray": []
   },
   "training_readiness": [],
-  "activities": [],
-  "resting_heart_rate": null
+  "activities": [
+    {
+      "activityId": 24126965723,
+      "activityName": "Nat. piscine",
+      "startTimeLocal": "2026-08-26 12:02:59",
+      "startTimeGMT": "2026-08-26 10:02:59",
+      "activityType": {
+        "typeId": 27,
+        "typeKey": "lap_swimming",
+        "parentTypeId": 26,
+        "isHidden": false,
+        "restricted": false,
+        "trimmable": false
+      },
+      "eventType": {
+        "typeId": 9,
+        "typeKey": "uncategorized",
+        "sortOrder": 10
+      },
+      "isFavorite": false,
+      "isPR": false,
+      "isAutoCalcCalories": false,
+      "isParent": false,
+      "distance": 1500.0,
+      "duration": 2441.22705078125,
+      "elapsedDuration": 2469.902099609375,
+      "movingDuration": 2179.85302734375,
+      "averageSpeed": 0.6881197952338991,
+      "maxSpeed": 6.504000186920167,
+      "hasPolyline": false,
+      "hasImages": false,
+      "ownerId": 86877926,
+      "ownerDisplayName": "d0619bee-6605-42ab-9b53-58eed098da06",
+      "ownerFullName": "Luc",
+      "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/58175172-8c79-4a46-b02d-d75fb82cba59-86877926.png",
+      "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9c4ffeb3-e0c9-48e6-a4fa-a1b701a56ac0-86877926.png",
+      "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/daeb9233-1fda-41d4-a040-e71206c67944-86877926.png",
+      "calories": 427.0,
+      "averageSwimCadenceInStrokesPerMinute": 29.0,
+      "maxSwimCadenceInStrokesPerMinute": 34.0,
+      "averageSwolf": 81.0,
+      "activeLengths": 30,
+      "userRoles": [
+        "SCOPE_GOLF_API_READ",
+        "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+        "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+        "SCOPE_ATP_READ",
+        "SCOPE_DIVE_API_WRITE",
+        "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+        "SCOPE_DIVE_API_READ",
+        "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_READ",
+        "SCOPE_CONNECT_WRITE",
+        "SCOPE_COMMUNITY_COURSE_WRITE",
+        "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+        "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+        "SCOPE_MESSAGE_GENERATION_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+        "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+        "SCOPE_ACTIVITY_DETECTION_READ",
+        "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+        "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+        "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+        "SCOPE_CONNECT_READ",
+        "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+        "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+        "SCOPE_ATP_WRITE",
+        "ROLE_CONNECTUSER",
+        "ROLE_FITNESS_USER",
+        "ROLE_WELLNESS_USER",
+        "ROLE_OUTDOOR_USER",
+        "ROLE_MARINE_USER",
+        "ROLE_DIVE_USER",
+        "ROLE_TACX_APP_USER",
+        "ROLE_GARMIN_USER"
+      ],
+      "privacy": {
+        "typeId": 2,
+        "typeKey": "private"
+      },
+      "userPro": false,
+      "poolLength": 5000.0,
+      "unitOfPoolLength": {
+        "unitId": 1,
+        "unitKey": "meter",
+        "factor": 100.0
+      },
+      "hasVideo": false,
+      "isPurposeful": false,
+      "timeZoneId": 124,
+      "beginTimestamp": 1787738579000,
+      "sportTypeId": 5,
+      "strokes": 1057.0,
+      "avgStrokeDistance": 188.99999856948853,
+      "avgStrokes": 26.399999618530273,
+      "deviceId": 3319086716,
+      "isElevationCorrected": false,
+      "isDecoDive": false,
+      "summarizedDiveInfo": {
+        "summarizedDiveGases": []
+      },
+      "manufacturer": "GARMIN",
+      "lapCount": 1,
+      "isAtpActivity": false,
+      "minActivityLapDuration": 2441.22705078125,
+      "splitSummaries": [],
+      "hasSplits": false,
+      "hasIntensityIntervals": false,
+      "isManualActivity": false,
+      "hasHeatMap": false,
+      "fastestSplit_1000": 1058.0,
+      "fastestSplit_100": 40.0,
+      "fastestSplit_400": 277.0,
+      "fastestSplit_750": 701.0,
+      "fastestSplit_1500": 1733.0,
+      "endTimeGMT": "2026-08-26 10:44:08",
+      "qualifyingDive": false,
+      "activityUUID": "7c995c2b-32c3-4ace-ae05-86453bd0185e",
+      "favorite": false,
+      "parent": false,
+      "manualActivity": false,
+      "pr": false,
+      "purposeful": false,
+      "autoCalcCalories": false,
+      "elevationCorrected": false,
+      "atpActivity": false,
+      "decoDive": false
+    },
+    {
+      "activityId": 24119899551,
+      "activityName": "Versailles Course \u00e0 pied",
+      "startTimeLocal": "2026-08-26 08:13:16",
+      "startTimeGMT": "2026-08-26 06:13:16",
+      "activityType": {
+        "typeId": 1,
+        "typeKey": "running",
+        "parentTypeId": 17,
+        "isHidden": false,
+        "restricted": false,
+        "trimmable": true
+      },
+      "eventType": {
+        "typeId": 9,
+        "typeKey": "uncategorized",
+        "sortOrder": 10
+      },
+      "isFavorite": false,
+      "isPR": false,
+      "isAutoCalcCalories": false,
+      "isParent": false,
+      "distance": 9342.169921875,
+      "duration": 2700.742919921875,
+      "elapsedDuration": 2700.742919921875,
+      "movingDuration": 2690.186019897461,
+      "elevationGain": 93.70477294921875,
+      "elevationLoss": 96.06208801269531,
+      "averageSpeed": 3.4590001106262207,
+      "maxSpeed": 4.675000190734863,
+      "startLatitude": 48.788384618237615,
+      "startLongitude": 2.1244436502456665,
+      "hasPolyline": true,
+      "hasImages": false,
+      "ownerId": 86877926,
+      "ownerDisplayName": "d0619bee-6605-42ab-9b53-58eed098da06",
+      "ownerFullName": "Luc",
+      "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/58175172-8c79-4a46-b02d-d75fb82cba59-86877926.png",
+      "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9c4ffeb3-e0c9-48e6-a4fa-a1b701a56ac0-86877926.png",
+      "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/daeb9233-1fda-41d4-a040-e71206c67944-86877926.png",
+      "calories": 621.0,
+      "averageHR": 158.0,
+      "maxHR": 181.0,
+      "averageRunningCadenceInStepsPerMinute": 162.0,
+      "maxRunningCadenceInStepsPerMinute": 176.0,
+      "steps": 7246,
+      "userRoles": [
+        "SCOPE_GOLF_API_READ",
+        "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+        "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+        "SCOPE_ATP_READ",
+        "SCOPE_DIVE_API_WRITE",
+        "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+        "SCOPE_DIVE_API_READ",
+        "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_READ",
+        "SCOPE_CONNECT_WRITE",
+        "SCOPE_COMMUNITY_COURSE_WRITE",
+        "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+        "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+        "SCOPE_MESSAGE_GENERATION_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+        "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+        "SCOPE_ACTIVITY_DETECTION_READ",
+        "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+        "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+        "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+        "SCOPE_CONNECT_READ",
+        "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+        "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+        "SCOPE_ATP_WRITE",
+        "ROLE_CONNECTUSER",
+        "ROLE_FITNESS_USER",
+        "ROLE_WELLNESS_USER",
+        "ROLE_OUTDOOR_USER",
+        "ROLE_MARINE_USER",
+        "ROLE_DIVE_USER",
+        "ROLE_TACX_APP_USER",
+        "ROLE_GARMIN_USER"
+      ],
+      "privacy": {
+        "typeId": 2,
+        "typeKey": "private"
+      },
+      "userPro": false,
+      "hasVideo": false,
+      "isPurposeful": false,
+      "timeZoneId": 124,
+      "beginTimestamp": 1787724796000,
+      "sportTypeId": 1,
+      "aerobicTrainingEffect": 3.9000000953674316,
+      "avgStrideLength": 127.92496703177147,
+      "vO2MaxValue": 56.0,
+      "deviceId": 3319086716,
+      "minElevation": 120.2462387084961,
+      "maxElevation": 181.38804626464844,
+      "avgElevation": 140.82414774057003,
+      "maxDoubleCadence": 176.0,
+      "isElevationCorrected": true,
+      "isDecoDive": false,
+      "summarizedDiveInfo": {
+        "summarizedDiveGases": []
+      },
+      "maxVerticalSpeed": 0.6078140258789062,
+      "manufacturer": "GARMIN",
+      "locationName": "Versailles",
+      "lapCount": 10,
+      "endLatitude": 48.78875786438584,
+      "endLongitude": 2.1240619383752346,
+      "isAtpActivity": false,
+      "minActivityLapDuration": 104.61399841308594,
+      "splitSummaries": [],
+      "hasSplits": false,
+      "hasIntensityIntervals": false,
+      "isManualActivity": false,
+      "hasHeatMap": false,
+      "fastestSplit_1000": 221.76699829101562,
+      "fastestSplit_1609": 384.13299560546875,
+      "fastestSplit_5000": 1338.864990234375,
+      "hrTimeInZone_1": 10.859,
+      "hrTimeInZone_2": 242.999,
+      "hrTimeInZone_3": 532.945,
+      "hrTimeInZone_4": 1577.251,
+      "hrTimeInZone_5": 338.408,
+      "endTimeGMT": "2026-08-26 06:58:16",
+      "qualifyingDive": false,
+      "activityUUID": "f0fed852-cbef-4c3e-9c8a-2dca8d00bca9",
+      "favorite": false,
+      "parent": false,
+      "manualActivity": false,
+      "pr": false,
+      "purposeful": false,
+      "autoCalcCalories": false,
+      "elevationCorrected": true,
+      "atpActivity": false,
+      "decoDive": false
+    }
+  ],
+  "resting_heart_rate": 75
 }

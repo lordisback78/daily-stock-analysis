@@ -33,10 +33,10 @@
   "heart_rates": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-25",
-    "startTimestampGMT": null,
-    "endTimestampGMT": null,
-    "startTimestampLocal": null,
-    "endTimestampLocal": null,
+    "startTimestampGMT": "2026-08-24T22:00:00.0",
+    "endTimestampGMT": "2026-08-25T22:00:00.0",
+    "startTimestampLocal": "2026-08-25T00:00:00.0",
+    "endTimestampLocal": "2026-08-26T00:00:00.0",
     "maxHeartRate": null,
     "minHeartRate": null,
     "restingHeartRate": null,
@@ -50,10 +50,10 @@
       "date": "2026-08-25",
       "charged": null,
       "drained": null,
-      "startTimestampGMT": null,
-      "endTimestampGMT": null,
-      "startTimestampLocal": null,
-      "endTimestampLocal": null,
+      "startTimestampGMT": "2026-08-24T22:00:00.0",
+      "endTimestampGMT": "2026-08-25T22:00:00.0",
+      "startTimestampLocal": "2026-08-25T00:00:00.0",
+      "endTimestampLocal": "2026-08-26T00:00:00.0",
       "bodyBatteryValuesArray": [
         [
           1787616000001,
@@ -80,20 +80,29 @@
           null
         ]
       ],
-      "bodyBatteryValueDescriptorDTOList": null
+      "bodyBatteryValueDescriptorDTOList": [
+        {
+          "bodyBatteryValueDescriptorIndex": 0,
+          "bodyBatteryValueDescriptorKey": "timestamp"
+        },
+        {
+          "bodyBatteryValueDescriptorIndex": 1,
+          "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+        }
+      ]
     }
   ],
   "stress": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-25",
-    "startTimestampGMT": null,
-    "endTimestampGMT": null,
-    "startTimestampLocal": null,
-    "endTimestampLocal": null,
+    "startTimestampGMT": "2026-08-24T22:00:00.0",
+    "endTimestampGMT": "2026-08-25T22:00:00.0",
+    "startTimestampLocal": "2026-08-25T00:00:00.0",
+    "endTimestampLocal": "2026-08-26T00:00:00.0",
     "maxStressLevel": null,
     "avgStressLevel": null,
-    "stressChartValueOffset": null,
-    "stressChartYAxisOrigin": null,
+    "stressChartValueOffset": 1,
+    "stressChartYAxisOrigin": -1,
     "stressValueDescriptorsDTOList": [],
     "stressValuesArray": []
   },
