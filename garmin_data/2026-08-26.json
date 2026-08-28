@@ -459,15 +459,15 @@
       "endTimeGMT": "2026-08-26 10:44:08",
       "qualifyingDive": false,
       "activityUUID": "7c995c2b-32c3-4ace-ae05-86453bd0185e",
-      "favorite": false,
-      "parent": false,
-      "manualActivity": false,
       "pr": false,
+      "favorite": false,
       "purposeful": false,
+      "parent": false,
+      "decoDive": false,
+      "manualActivity": false,
       "autoCalcCalories": false,
       "elevationCorrected": false,
-      "atpActivity": false,
-      "decoDive": false
+      "atpActivity": false
     },
     {
       "activityId": 24119899551,
@@ -596,15 +596,15 @@
       "endTimeGMT": "2026-08-26 06:58:16",
       "qualifyingDive": false,
       "activityUUID": "f0fed852-cbef-4c3e-9c8a-2dca8d00bca9",
-      "favorite": false,
-      "parent": false,
-      "manualActivity": false,
       "pr": false,
+      "favorite": false,
       "purposeful": false,
+      "parent": false,
+      "decoDive": false,
+      "manualActivity": false,
       "autoCalcCalories": false,
       "elevationCorrected": true,
-      "atpActivity": false,
-      "decoDive": false
+      "atpActivity": false
     }
   ],
   "resting_heart_rate": 75
