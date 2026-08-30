@@ -45,44 +45,7 @@
     "heartRateValues": null
   },
   "hrv": {},
-  "body_battery": [
-    {
-      "date": "2026-08-29",
-      "charged": null,
-      "drained": null,
-      "startTimestampGMT": null,
-      "endTimestampGMT": null,
-      "startTimestampLocal": null,
-      "endTimestampLocal": null,
-      "bodyBatteryValuesArray": [
-        [
-          1787961600001,
-          null
-        ],
-        [
-          1787961600002,
-          null
-        ],
-        [
-          1787961600003,
-          null
-        ],
-        [
-          1787961600004,
-          null
-        ],
-        [
-          1787961600005,
-          null
-        ],
-        [
-          1787961600006,
-          null
-        ]
-      ],
-      "bodyBatteryValueDescriptorDTOList": null
-    }
-  ],
+  "body_battery": [],
   "stress": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-29",
@@ -98,6 +61,145 @@
     "stressValuesArray": []
   },
   "training_readiness": [],
-  "activities": [],
+  "activities": [
+    {
+      "activityId": 24162263605,
+      "activityName": "Jouy-en-Josas Course \u00e0 pied",
+      "startTimeLocal": "2026-08-29 16:33:24",
+      "startTimeGMT": "2026-08-29 14:33:24",
+      "activityType": {
+        "typeId": 1,
+        "typeKey": "running",
+        "parentTypeId": 17,
+        "isHidden": false,
+        "restricted": false,
+        "trimmable": true
+      },
+      "eventType": {
+        "typeId": 9,
+        "typeKey": "uncategorized",
+        "sortOrder": 10
+      },
+      "isFavorite": false,
+      "isPR": false,
+      "isAutoCalcCalories": false,
+      "isParent": false,
+      "distance": 14659.400390625,
+      "duration": 4089.614013671875,
+      "elapsedDuration": 4150.1318359375,
+      "movingDuration": 4077.6370010375977,
+      "elevationGain": 173.4641571044922,
+      "elevationLoss": 163.32274627685547,
+      "averageSpeed": 3.5850000381469727,
+      "maxSpeed": 5.355999946594238,
+      "startLatitude": 48.76770604401827,
+      "startLongitude": 2.157394839450717,
+      "hasPolyline": true,
+      "hasImages": false,
+      "ownerId": 86877926,
+      "ownerDisplayName": "d0619bee-6605-42ab-9b53-58eed098da06",
+      "ownerFullName": "Luc",
+      "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/58175172-8c79-4a46-b02d-d75fb82cba59-86877926.png",
+      "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9c4ffeb3-e0c9-48e6-a4fa-a1b701a56ac0-86877926.png",
+      "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/daeb9233-1fda-41d4-a040-e71206c67944-86877926.png",
+      "calories": 837.0,
+      "averageHR": 148.0,
+      "maxHR": 153.0,
+      "averageRunningCadenceInStepsPerMinute": 159.96875,
+      "maxRunningCadenceInStepsPerMinute": 182.0,
+      "steps": 10714,
+      "userRoles": [
+        "SCOPE_GOLF_API_READ",
+        "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+        "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+        "SCOPE_ATP_READ",
+        "SCOPE_DIVE_API_WRITE",
+        "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+        "SCOPE_DIVE_API_READ",
+        "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_READ",
+        "SCOPE_CONNECT_WRITE",
+        "SCOPE_COMMUNITY_COURSE_WRITE",
+        "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+        "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+        "SCOPE_MESSAGE_GENERATION_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+        "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+        "SCOPE_ACTIVITY_DETECTION_READ",
+        "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+        "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+        "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+        "SCOPE_CONNECT_READ",
+        "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+        "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+        "SCOPE_ATP_WRITE",
+        "ROLE_CONNECTUSER",
+        "ROLE_FITNESS_USER",
+        "ROLE_WELLNESS_USER",
+        "ROLE_OUTDOOR_USER",
+        "ROLE_MARINE_USER",
+        "ROLE_DIVE_USER",
+        "ROLE_TACX_APP_USER",
+        "ROLE_GARMIN_USER"
+      ],
+      "privacy": {
+        "typeId": 2,
+        "typeKey": "private"
+      },
+      "userPro": false,
+      "hasVideo": false,
+      "isPurposeful": false,
+      "timeZoneId": 124,
+      "beginTimestamp": 1788014004000,
+      "sportTypeId": 1,
+      "aerobicTrainingEffect": 3.299999952316284,
+      "avgStrideLength": 134.02563677013987,
+      "vO2MaxValue": 58.0,
+      "deviceId": 3319086716,
+      "minElevation": 91.5999984741211,
+      "maxElevation": 162.0991668701172,
+      "avgElevation": 125.31188026818987,
+      "maxDoubleCadence": 182.0,
+      "isElevationCorrected": true,
+      "isDecoDive": false,
+      "summarizedDiveInfo": {
+        "summarizedDiveGases": []
+      },
+      "maxVerticalSpeed": 0.5490230984157987,
+      "manufacturer": "GARMIN",
+      "locationName": "Jouy-en-Josas",
+      "lapCount": 58,
+      "endLatitude": 48.76696868799627,
+      "endLongitude": 2.159430468454957,
+      "isAtpActivity": false,
+      "minActivityLapDuration": 30.0,
+      "splitSummaries": [],
+      "hasSplits": false,
+      "hasIntensityIntervals": false,
+      "isManualActivity": false,
+      "hasHeatMap": false,
+      "fastestSplit_1000": 235.4770050048828,
+      "fastestSplit_1609": 378.61700439453125,
+      "fastestSplit_5000": 1194.1259765625,
+      "fastestSplit_10000": 2659.197998046875,
+      "hrTimeInZone_1": 8.0,
+      "hrTimeInZone_2": 196.71,
+      "hrTimeInZone_3": 3860.778,
+      "hrTimeInZone_4": 0.0,
+      "hrTimeInZone_5": 0.0,
+      "endTimeGMT": "2026-08-29 15:42:34",
+      "qualifyingDive": false,
+      "activityUUID": "3aa083f8-7971-4a3e-bf7d-92e6c435af30",
+      "parent": false,
+      "decoDive": false,
+      "elevationCorrected": true,
+      "atpActivity": false,
+      "pr": false,
+      "favorite": false,
+      "purposeful": false,
+      "autoCalcCalories": false,
+      "manualActivity": false
+    }
+  ],
   "resting_heart_rate": null
 }
