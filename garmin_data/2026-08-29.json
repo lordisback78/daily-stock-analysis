@@ -33,30 +33,286 @@
   "heart_rates": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-29",
-    "startTimestampGMT": null,
-    "endTimestampGMT": null,
-    "startTimestampLocal": null,
-    "endTimestampLocal": null,
-    "maxHeartRate": null,
-    "minHeartRate": null,
-    "restingHeartRate": null,
-    "lastSevenDaysAvgRestingHeartRate": null,
-    "heartRateValueDescriptors": null,
-    "heartRateValues": null
+    "startTimestampGMT": "2026-08-28T22:00:00.0",
+    "endTimestampGMT": "2026-08-29T22:00:00.0",
+    "startTimestampLocal": "2026-08-29T00:00:00.0",
+    "endTimestampLocal": "2026-08-30T00:00:00.0",
+    "maxHeartRate": 153,
+    "minHeartRate": 65,
+    "restingHeartRate": 65,
+    "lastSevenDaysAvgRestingHeartRate": 53,
+    "heartRateValueDescriptors": [
+      {
+        "index": 0,
+        "key": "timestamp"
+      },
+      {
+        "index": 1,
+        "key": "heartrate"
+      }
+    ],
+    "heartRateValues": [
+      [
+        1787954400000,
+        null
+      ],
+      [
+        1788010080000,
+        65
+      ],
+      [
+        1788010200000,
+        null
+      ],
+      [
+        1788010440000,
+        87
+      ],
+      [
+        1788010560000,
+        85
+      ],
+      [
+        1788010680000,
+        null
+      ],
+      [
+        1788013800000,
+        77
+      ],
+      [
+        1788013920000,
+        71
+      ],
+      [
+        1788014040000,
+        88
+      ],
+      [
+        1788014160000,
+        134
+      ],
+      [
+        1788014280000,
+        135
+      ],
+      [
+        1788014400000,
+        136
+      ],
+      [
+        1788014520000,
+        138
+      ],
+      [
+        1788014640000,
+        139
+      ],
+      [
+        1788014760000,
+        140
+      ],
+      [
+        1788014880000,
+        142
+      ],
+      [
+        1788015000000,
+        143
+      ],
+      [
+        1788015120000,
+        144
+      ],
+      [
+        1788015240000,
+        146
+      ],
+      [
+        1788015360000,
+        147
+      ],
+      [
+        1788015480000,
+        148
+      ],
+      [
+        1788015600000,
+        150
+      ],
+      [
+        1788015720000,
+        151
+      ],
+      [
+        1788015840000,
+        152
+      ],
+      [
+        1788015960000,
+        153
+      ],
+      [
+        1788016080000,
+        153
+      ],
+      [
+        1788016200000,
+        153
+      ],
+      [
+        1788016320000,
+        153
+      ],
+      [
+        1788016440000,
+        153
+      ],
+      [
+        1788016560000,
+        153
+      ],
+      [
+        1788016680000,
+        153
+      ],
+      [
+        1788016800000,
+        148
+      ],
+      [
+        1788016920000,
+        146
+      ],
+      [
+        1788017040000,
+        153
+      ],
+      [
+        1788017160000,
+        153
+      ],
+      [
+        1788017280000,
+        153
+      ],
+      [
+        1788017400000,
+        153
+      ],
+      [
+        1788017520000,
+        153
+      ],
+      [
+        1788017640000,
+        153
+      ],
+      [
+        1788017760000,
+        153
+      ],
+      [
+        1788017880000,
+        153
+      ],
+      [
+        1788018000000,
+        153
+      ],
+      [
+        1788018120000,
+        153
+      ],
+      [
+        1788018240000,
+        128
+      ],
+      [
+        1788018360000,
+        108
+      ],
+      [
+        1788018480000,
+        null
+      ],
+      [
+        1788018720000,
+        93
+      ],
+      [
+        1788018840000,
+        null
+      ],
+      [
+        1788027960000,
+        72
+      ],
+      [
+        1788028080000,
+        72
+      ]
+    ]
   },
   "hrv": {},
-  "body_battery": [],
+  "body_battery": [
+    {
+      "date": "2026-08-29",
+      "charged": null,
+      "drained": null,
+      "startTimestampGMT": "2026-08-28T22:00:00.0",
+      "endTimestampGMT": "2026-08-29T22:00:00.0",
+      "startTimestampLocal": "2026-08-29T00:00:00.0",
+      "endTimestampLocal": "2026-08-30T00:00:00.0",
+      "bodyBatteryValuesArray": [
+        [
+          1787961600001,
+          null
+        ],
+        [
+          1787961600002,
+          null
+        ],
+        [
+          1787961600003,
+          null
+        ],
+        [
+          1787961600004,
+          null
+        ],
+        [
+          1787961600005,
+          null
+        ],
+        [
+          1787961600006,
+          null
+        ]
+      ],
+      "bodyBatteryValueDescriptorDTOList": [
+        {
+          "bodyBatteryValueDescriptorIndex": 0,
+          "bodyBatteryValueDescriptorKey": "timestamp"
+        },
+        {
+          "bodyBatteryValueDescriptorIndex": 1,
+          "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+        }
+      ]
+    }
+  ],
   "stress": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-29",
-    "startTimestampGMT": null,
-    "endTimestampGMT": null,
-    "startTimestampLocal": null,
-    "endTimestampLocal": null,
+    "startTimestampGMT": "2026-08-28T22:00:00.0",
+    "endTimestampGMT": "2026-08-29T22:00:00.0",
+    "startTimestampLocal": "2026-08-29T00:00:00.0",
+    "endTimestampLocal": "2026-08-30T00:00:00.0",
     "maxStressLevel": null,
     "avgStressLevel": null,
-    "stressChartValueOffset": null,
-    "stressChartYAxisOrigin": null,
+    "stressChartValueOffset": 1,
+    "stressChartYAxisOrigin": -1,
     "stressValueDescriptorsDTOList": [],
     "stressValuesArray": []
   },
@@ -190,16 +446,16 @@
       "endTimeGMT": "2026-08-29 15:42:34",
       "qualifyingDive": false,
       "activityUUID": "3aa083f8-7971-4a3e-bf7d-92e6c435af30",
-      "parent": false,
-      "decoDive": false,
-      "elevationCorrected": true,
-      "atpActivity": false,
       "pr": false,
       "favorite": false,
       "purposeful": false,
+      "parent": false,
+      "decoDive": false,
+      "manualActivity": false,
       "autoCalcCalories": false,
-      "manualActivity": false
+      "elevationCorrected": true,
+      "atpActivity": false
     }
   ],
-  "resting_heart_rate": null
+  "resting_heart_rate": 65
 }
