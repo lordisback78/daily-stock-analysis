@@ -34,7 +34,7 @@
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-30",
     "startTimestampGMT": "2026-08-29T22:00:00.0",
-    "endTimestampGMT": "2026-08-30T15:17:00.0",
+    "endTimestampGMT": "2026-08-30T15:18:00.0",
     "startTimestampLocal": "2026-08-30T00:00:00.0",
     "endTimestampLocal": "2026-08-31T00:00:00.0",
     "maxHeartRate": 141,
@@ -926,7 +926,7 @@
       ],
       [
         1788102960000,
-        59
+        78
       ]
     ]
   },
@@ -937,9 +937,9 @@
       "charged": null,
       "drained": null,
       "startTimestampGMT": "2026-08-29T22:00:00.0",
-      "endTimestampGMT": "2026-08-30T15:17:00.0",
+      "endTimestampGMT": "2026-08-30T15:18:00.0",
       "startTimestampLocal": "2026-08-30T00:00:00.0",
-      "endTimestampLocal": "2026-08-30T17:17:00.0",
+      "endTimestampLocal": "2026-08-30T17:18:00.0",
       "bodyBatteryValuesArray": [
         [
           1788048000001,
@@ -982,9 +982,9 @@
     "userProfilePK": 86877926,
     "calendarDate": "2026-08-30",
     "startTimestampGMT": "2026-08-29T22:00:00.0",
-    "endTimestampGMT": "2026-08-30T15:17:00.0",
+    "endTimestampGMT": "2026-08-30T15:18:00.0",
     "startTimestampLocal": "2026-08-30T00:00:00.0",
-    "endTimestampLocal": "2026-08-30T17:17:00.0",
+    "endTimestampLocal": "2026-08-30T17:18:00.0",
     "maxStressLevel": null,
     "avgStressLevel": null,
     "stressChartValueOffset": 1,
