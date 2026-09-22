@@ -33,16 +33,50 @@
   "heart_rates": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-09-20",
-    "startTimestampGMT": null,
-    "endTimestampGMT": null,
-    "startTimestampLocal": null,
-    "endTimestampLocal": null,
-    "maxHeartRate": null,
-    "minHeartRate": null,
-    "restingHeartRate": null,
-    "lastSevenDaysAvgRestingHeartRate": null,
-    "heartRateValueDescriptors": null,
-    "heartRateValues": null
+    "startTimestampGMT": "2026-09-19T22:00:00.0",
+    "endTimestampGMT": "2026-09-20T22:00:00.0",
+    "startTimestampLocal": "2026-09-20T00:00:00.0",
+    "endTimestampLocal": "2026-09-21T00:00:00.0",
+    "maxHeartRate": 71,
+    "minHeartRate": 66,
+    "restingHeartRate": 66,
+    "lastSevenDaysAvgRestingHeartRate": 48,
+    "heartRateValues": [
+      [
+        1789855200000,
+        null
+      ],
+      [
+        1789883640000,
+        66
+      ],
+      [
+        1789883760000,
+        null
+      ],
+      [
+        1789883880000,
+        70
+      ],
+      [
+        1789884000000,
+        null
+      ],
+      [
+        1789898880000,
+        71
+      ]
+    ],
+    "heartRateValueDescriptors": [
+      {
+        "index": 0,
+        "key": "timestamp"
+      },
+      {
+        "index": 1,
+        "key": "heartrate"
+      }
+    ]
   },
   "hrv": {},
   "body_battery": [
@@ -50,10 +84,10 @@
       "date": "2026-09-20",
       "charged": null,
       "drained": null,
-      "startTimestampGMT": null,
-      "endTimestampGMT": null,
-      "startTimestampLocal": null,
-      "endTimestampLocal": null,
+      "startTimestampGMT": "2026-09-19T22:00:00.0",
+      "endTimestampGMT": "2026-09-20T22:00:00.0",
+      "startTimestampLocal": "2026-09-20T00:00:00.0",
+      "endTimestampLocal": "2026-09-21T00:00:00.0",
       "bodyBatteryValuesArray": [
         [
           1789862400001,
@@ -80,24 +114,33 @@
           null
         ]
       ],
-      "bodyBatteryValueDescriptorDTOList": null
+      "bodyBatteryValueDescriptorDTOList": [
+        {
+          "bodyBatteryValueDescriptorIndex": 0,
+          "bodyBatteryValueDescriptorKey": "timestamp"
+        },
+        {
+          "bodyBatteryValueDescriptorIndex": 1,
+          "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+        }
+      ]
     }
   ],
   "stress": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-09-20",
-    "startTimestampGMT": null,
-    "endTimestampGMT": null,
-    "startTimestampLocal": null,
-    "endTimestampLocal": null,
+    "startTimestampGMT": "2026-09-19T22:00:00.0",
+    "endTimestampGMT": "2026-09-20T22:00:00.0",
+    "startTimestampLocal": "2026-09-20T00:00:00.0",
+    "endTimestampLocal": "2026-09-21T00:00:00.0",
     "maxStressLevel": null,
     "avgStressLevel": null,
-    "stressChartValueOffset": null,
-    "stressChartYAxisOrigin": null,
+    "stressChartValueOffset": 1,
+    "stressChartYAxisOrigin": -1,
     "stressValueDescriptorsDTOList": [],
     "stressValuesArray": []
   },
   "training_readiness": [],
   "activities": [],
-  "resting_heart_rate": null
+  "resting_heart_rate": 66
 }
