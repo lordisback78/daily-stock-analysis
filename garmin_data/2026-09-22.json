@@ -553,15 +553,15 @@
       "endTimeGMT": "2026-09-22 07:06:17",
       "qualifyingDive": false,
       "activityUUID": "d22e4470-cb85-4f95-ab99-4ef8d5f3aaee",
+      "pr": false,
+      "favorite": false,
+      "purposeful": false,
+      "parent": false,
+      "decoDive": false,
+      "manualActivity": false,
       "autoCalcCalories": false,
       "elevationCorrected": false,
-      "atpActivity": false,
-      "purposeful": false,
-      "manualActivity": false,
-      "favorite": false,
-      "decoDive": false,
-      "pr": false,
-      "parent": false
+      "atpActivity": false
     }
   ],
   "resting_heart_rate": 55
