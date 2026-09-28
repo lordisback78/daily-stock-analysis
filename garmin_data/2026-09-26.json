@@ -412,8 +412,8 @@
         "typeKey": "cycling",
         "parentTypeId": 17,
         "isHidden": false,
-        "restricted": false,
-        "trimmable": true
+        "trimmable": true,
+        "restricted": false
       },
       "eventType": {
         "typeId": 9,
@@ -530,13 +530,13 @@
       "activityUUID": "e236e256-78aa-4340-86d0-15613fa08d23",
       "pr": false,
       "purposeful": false,
-      "favorite": false,
-      "parent": false,
-      "decoDive": false,
       "manualActivity": false,
+      "decoDive": false,
       "autoCalcCalories": false,
+      "favorite": false,
       "elevationCorrected": true,
-      "atpActivity": false
+      "atpActivity": false,
+      "parent": false
     }
   ],
   "resting_heart_rate": 59
