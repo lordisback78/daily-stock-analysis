@@ -41,6 +41,16 @@
     "minHeartRate": 48,
     "restingHeartRate": 47,
     "lastSevenDaysAvgRestingHeartRate": 54,
+    "heartRateValueDescriptors": [
+      {
+        "index": 0,
+        "key": "timestamp"
+      },
+      {
+        "index": 1,
+        "key": "heartrate"
+      }
+    ],
     "heartRateValues": [
       [
         1790632800000,
@@ -1142,16 +1152,6 @@
         1790704440000,
         73
       ]
-    ],
-    "heartRateValueDescriptors": [
-      {
-        "index": 0,
-        "key": "timestamp"
-      },
-      {
-        "index": 1,
-        "key": "heartrate"
-      }
     ]
   },
   "hrv": {},
@@ -1341,13 +1341,13 @@
       "endTimeGMT": "2026-09-29 07:11:15",
       "qualifyingDive": false,
       "activityUUID": "c32ee2eb-91ea-4a2d-b000-c2c03be2c1d2",
-      "atpActivity": false,
-      "pr": false,
       "decoDive": false,
+      "elevationCorrected": false,
+      "atpActivity": false,
+      "autoCalcCalories": false,
+      "pr": false,
       "favorite": false,
       "purposeful": false,
-      "elevationCorrected": false,
-      "autoCalcCalories": false,
       "manualActivity": false,
       "parent": false
     }
