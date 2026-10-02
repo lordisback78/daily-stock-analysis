@@ -41,6 +41,16 @@
     "minHeartRate": 50,
     "restingHeartRate": 50,
     "lastSevenDaysAvgRestingHeartRate": 53,
+    "heartRateValueDescriptors": [
+      {
+        "index": 0,
+        "key": "timestamp"
+      },
+      {
+        "index": 1,
+        "key": "heartrate"
+      }
+    ],
     "heartRateValues": [
       [
         1790719200000,
@@ -342,16 +352,6 @@
         1790758080000,
         71
       ]
-    ],
-    "heartRateValueDescriptors": [
-      {
-        "index": 0,
-        "key": "timestamp"
-      },
-      {
-        "index": 1,
-        "key": "heartrate"
-      }
     ]
   },
   "hrv": {},
@@ -502,7 +502,8 @@
         "ROLE_MARINE_USER",
         "ROLE_DIVE_USER",
         "ROLE_TACX_APP_USER",
-        "ROLE_GARMIN_USER"
+        "ROLE_GARMIN_USER",
+        "ROLE_GCM_USER"
       ],
       "privacy": {
         "typeId": 2,
@@ -549,15 +550,15 @@
       "endTimeGMT": "2026-09-30 06:50:26",
       "qualifyingDive": false,
       "activityUUID": "e8ac98ec-0647-419d-a2d4-97db70816f0e",
+      "parent": false,
+      "decoDive": false,
+      "favorite": false,
+      "purposeful": false,
       "pr": true,
+      "manualActivity": false,
       "autoCalcCalories": false,
       "elevationCorrected": true,
-      "atpActivity": false,
-      "favorite": false,
-      "decoDive": false,
-      "purposeful": false,
-      "manualActivity": false,
-      "parent": false
+      "atpActivity": false
     }
   ],
   "resting_heart_rate": 50
