@@ -22,10 +22,7 @@ def fetch_day(client, day):
     metrics = {
         "sleep": (client.get_sleep_data, day),
         "heart_rates": (client.get_heart_rates, day),
-        "hrv": (client.get_hrv_data, day),
-        "body_battery": (client.get_body_battery, day, day),
         "stress": (client.get_stress_data, day),
-        "training_readiness": (client.get_training_readiness, day),
         "activities": (client.get_activities_by_date, day, day),
     }
 
