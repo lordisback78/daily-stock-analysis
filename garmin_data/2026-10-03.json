@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-02",
+  "date": "2026-10-03",
   "errors": {},
   "sleep": {
     "dailySleepDTO": {
       "id": null,
       "userProfilePK": 86877926,
-      "calendarDate": "2026-10-02",
+      "calendarDate": "2026-10-03",
       "sleepTimeSeconds": null,
       "napTimeSeconds": null,
       "sleepWindowConfirmed": null,
@@ -32,14 +32,14 @@
   },
   "heart_rates": {
     "userProfilePK": 86877926,
-    "calendarDate": "2026-10-02",
-    "startTimestampGMT": "2026-10-01T22:00:00.0",
-    "endTimestampGMT": "2026-10-02T22:00:00.0",
-    "startTimestampLocal": "2026-10-02T00:00:00.0",
-    "endTimestampLocal": "2026-10-03T00:00:00.0",
-    "maxHeartRate": 58,
-    "minHeartRate": 58,
-    "restingHeartRate": 58,
+    "calendarDate": "2026-10-03",
+    "startTimestampGMT": "2026-10-02T22:00:00.0",
+    "endTimestampGMT": "2026-10-03T07:38:00.0",
+    "startTimestampLocal": "2026-10-03T00:00:00.0",
+    "endTimestampLocal": "2026-10-04T00:00:00.0",
+    "maxHeartRate": 104,
+    "minHeartRate": 59,
+    "restingHeartRate": 55,
     "lastSevenDaysAvgRestingHeartRate": 54,
     "heartRateValueDescriptors": [
       {
@@ -53,48 +53,72 @@
     ],
     "heartRateValues": [
       [
-        1790892000000,
+        1790978400000,
         null
       ],
       [
-        1790968320000,
-        58
+        1791012240000,
+        69
+      ],
+      [
+        1791012360000,
+        78
+      ],
+      [
+        1791012480000,
+        73
+      ],
+      [
+        1791012600000,
+        77
+      ],
+      [
+        1791012720000,
+        104
+      ],
+      [
+        1791012840000,
+        70
+      ],
+      [
+        1791012960000,
+        59
       ]
     ]
   },
   "hrv": {},
   "body_battery": [
     {
-      "date": "2026-10-02",
+      "date": "2026-10-03",
       "charged": null,
       "drained": null,
-      "startTimestampGMT": "2026-10-01T22:00:00.0",
-      "endTimestampGMT": "2026-10-02T22:00:00.0",
-      "startTimestampLocal": "2026-10-02T00:00:00.0",
-      "endTimestampLocal": "2026-10-03T00:00:00.0",
+      "startTimestampGMT": "2026-10-02T22:00:00.0",
+      "endTimestampGMT": "2026-10-03T07:38:00.0",
+      "startTimestampLocal": "2026-10-03T00:00:00.0",
+      "endTimestampLocal": "2026-10-03T09:38:00.0",
       "bodyBatteryValuesArray": [
         [
-          1790899200001,
+          1790985600001,
           null
         ],
         [
-          1790899200002,
+          1790985600002,
           null
         ],
         [
-          1790899200003,
+          1790985600003,
           null
         ],
         [
-          1790899200004,
+          1790985600004,
           null
         ],
         [
-          1790899200005,
+          1790985600005,
           null
         ],
         [
-          1790899200006,
+          1790985600006,
           null
         ]
       ],
@@ -112,11 +136,11 @@
   ],
   "stress": {
     "userProfilePK": 86877926,
-    "calendarDate": "2026-10-02",
-    "startTimestampGMT": "2026-10-01T22:00:00.0",
-    "endTimestampGMT": "2026-10-02T22:00:00.0",
-    "startTimestampLocal": "2026-10-02T00:00:00.0",
-    "endTimestampLocal": "2026-10-03T00:00:00.0",
+    "calendarDate": "2026-10-03",
+    "startTimestampGMT": "2026-10-02T22:00:00.0",
+    "endTimestampGMT": "2026-10-03T07:38:00.0",
+    "startTimestampLocal": "2026-10-03T00:00:00.0",
+    "endTimestampLocal": "2026-10-03T09:38:00.0",
     "maxStressLevel": null,
     "avgStressLevel": null,
     "stressChartValueOffset": 1,
@@ -126,5 +150,5 @@
   },
   "training_readiness": [],
   "activities": [],
-  "resting_heart_rate": 58
+  "resting_heart_rate": 55
 }
