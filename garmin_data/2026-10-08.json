@@ -41,8 +41,8 @@
     "minHeartRate": null,
     "restingHeartRate": null,
     "lastSevenDaysAvgRestingHeartRate": null,
-    "heartRateValueDescriptors": null,
-    "heartRateValues": null
+    "heartRateValues": null,
+    "heartRateValueDescriptors": null
   },
   "hrv": {},
   "body_battery": [],
@@ -186,15 +186,15 @@
       "endTimeGMT": "2026-10-08 07:20:57",
       "qualifyingDive": false,
       "activityUUID": "39f8436b-e813-496e-9a64-0f2b48cb77f3",
-      "decoDive": false,
-      "purposeful": false,
-      "manualActivity": false,
-      "autoCalcCalories": false,
-      "favorite": false,
-      "atpActivity": false,
-      "elevationCorrected": false,
       "pr": false,
-      "parent": false
+      "favorite": false,
+      "purposeful": false,
+      "autoCalcCalories": false,
+      "elevationCorrected": false,
+      "decoDive": false,
+      "atpActivity": false,
+      "parent": false,
+      "manualActivity": false
     }
   ],
   "resting_heart_rate": null
