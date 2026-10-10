@@ -41,8 +41,8 @@
     "minHeartRate": null,
     "restingHeartRate": null,
     "lastSevenDaysAvgRestingHeartRate": null,
-    "heartRateValues": null,
-    "heartRateValueDescriptors": null
+    "heartRateValueDescriptors": null,
+    "heartRateValues": null
   },
   "hrv": {},
   "body_battery": [],
@@ -189,12 +189,12 @@
       "pr": false,
       "favorite": false,
       "purposeful": false,
+      "parent": false,
+      "decoDive": false,
+      "manualActivity": false,
       "autoCalcCalories": false,
       "elevationCorrected": false,
-      "decoDive": false,
-      "atpActivity": false,
-      "parent": false,
-      "manualActivity": false
+      "atpActivity": false
     }
   ],
   "resting_heart_rate": null
