@@ -33,16 +33,98 @@
   "heart_rates": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-10-10",
-    "startTimestampGMT": null,
-    "endTimestampGMT": null,
-    "startTimestampLocal": null,
-    "endTimestampLocal": null,
-    "maxHeartRate": null,
-    "minHeartRate": null,
-    "restingHeartRate": null,
-    "lastSevenDaysAvgRestingHeartRate": null,
-    "heartRateValueDescriptors": null,
-    "heartRateValues": null
+    "startTimestampGMT": "2026-10-09T22:00:00.0",
+    "endTimestampGMT": "2026-10-10T22:00:00.0",
+    "startTimestampLocal": "2026-10-10T00:00:00.0",
+    "endTimestampLocal": "2026-10-11T00:00:00.0",
+    "maxHeartRate": 124,
+    "minHeartRate": 68,
+    "restingHeartRate": 68,
+    "lastSevenDaysAvgRestingHeartRate": 66,
+    "heartRateValueDescriptors": [
+      {
+        "index": 0,
+        "key": "timestamp"
+      },
+      {
+        "index": 1,
+        "key": "heartrate"
+      }
+    ],
+    "heartRateValues": [
+      [
+        1791583200000,
+        null
+      ],
+      [
+        1791618960000,
+        80
+      ],
+      [
+        1791619080000,
+        104
+      ],
+      [
+        1791619200000,
+        121
+      ],
+      [
+        1791619320000,
+        123
+      ],
+      [
+        1791619440000,
+        124
+      ],
+      [
+        1791619560000,
+        122
+      ],
+      [
+        1791619680000,
+        121
+      ],
+      [
+        1791619800000,
+        122
+      ],
+      [
+        1791619920000,
+        124
+      ],
+      [
+        1791620040000,
+        122
+      ],
+      [
+        1791620160000,
+        120
+      ],
+      [
+        1791620280000,
+        113
+      ],
+      [
+        1791620400000,
+        80
+      ],
+      [
+        1791620520000,
+        null
+      ],
+      [
+        1791628800000,
+        68
+      ],
+      [
+        1791628920000,
+        null
+      ],
+      [
+        1791658080000,
+        72
+      ]
+    ]
   },
   "hrv": {},
   "body_battery": [
@@ -50,10 +132,10 @@
       "date": "2026-10-10",
       "charged": null,
       "drained": null,
-      "startTimestampGMT": null,
-      "endTimestampGMT": null,
-      "startTimestampLocal": null,
-      "endTimestampLocal": null,
+      "startTimestampGMT": "2026-10-09T22:00:00.0",
+      "endTimestampGMT": "2026-10-10T22:00:00.0",
+      "startTimestampLocal": "2026-10-10T00:00:00.0",
+      "endTimestampLocal": "2026-10-11T00:00:00.0",
       "bodyBatteryValuesArray": [
         [
           1791590400001,
@@ -80,24 +162,176 @@
           null
         ]
       ],
-      "bodyBatteryValueDescriptorDTOList": null
+      "bodyBatteryValueDescriptorDTOList": [
+        {
+          "bodyBatteryValueDescriptorIndex": 0,
+          "bodyBatteryValueDescriptorKey": "timestamp"
+        },
+        {
+          "bodyBatteryValueDescriptorIndex": 1,
+          "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+        }
+      ]
     }
   ],
   "stress": {
     "userProfilePK": 86877926,
     "calendarDate": "2026-10-10",
-    "startTimestampGMT": null,
-    "endTimestampGMT": null,
-    "startTimestampLocal": null,
-    "endTimestampLocal": null,
+    "startTimestampGMT": "2026-10-09T22:00:00.0",
+    "endTimestampGMT": "2026-10-10T22:00:00.0",
+    "startTimestampLocal": "2026-10-10T00:00:00.0",
+    "endTimestampLocal": "2026-10-11T00:00:00.0",
     "maxStressLevel": null,
     "avgStressLevel": null,
-    "stressChartValueOffset": null,
-    "stressChartYAxisOrigin": null,
+    "stressChartValueOffset": 1,
+    "stressChartYAxisOrigin": -1,
     "stressValueDescriptorsDTOList": [],
     "stressValuesArray": []
   },
   "training_readiness": [],
-  "activities": [],
-  "resting_heart_rate": null
+  "activities": [
+    {
+      "activityId": 24680673039,
+      "activityName": "Jouy-en-Josas Course \u00e0 pied",
+      "startTimeLocal": "2026-10-10 09:57:26",
+      "startTimeGMT": "2026-10-10 07:57:26",
+      "activityType": {
+        "typeId": 1,
+        "typeKey": "running",
+        "parentTypeId": 17,
+        "isHidden": false,
+        "restricted": false,
+        "trimmable": true
+      },
+      "eventType": {
+        "typeId": 9,
+        "typeKey": "uncategorized",
+        "sortOrder": 10
+      },
+      "isFavorite": false,
+      "isPR": false,
+      "isAutoCalcCalories": false,
+      "isParent": false,
+      "distance": 3222.68994140625,
+      "duration": 1153.426025390625,
+      "elapsedDuration": 1153.9739990234375,
+      "movingDuration": 1152.702003479004,
+      "elevationGain": 11.837112426757812,
+      "elevationLoss": 15.936790466308594,
+      "averageSpeed": 2.7939999103546143,
+      "maxSpeed": 3.190999984741211,
+      "startLatitude": 48.76662670634687,
+      "startLongitude": 2.1595086716115475,
+      "hasPolyline": true,
+      "hasImages": false,
+      "ownerId": 86877926,
+      "ownerDisplayName": "d0619bee-6605-42ab-9b53-58eed098da06",
+      "ownerFullName": "Luc",
+      "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/58175172-8c79-4a46-b02d-d75fb82cba59-86877926.png",
+      "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9c4ffeb3-e0c9-48e6-a4fa-a1b701a56ac0-86877926.png",
+      "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/daeb9233-1fda-41d4-a040-e71206c67944-86877926.png",
+      "calories": 187.0,
+      "averageHR": 122.0,
+      "maxHR": 134.0,
+      "averageRunningCadenceInStepsPerMinute": 157.84375,
+      "maxRunningCadenceInStepsPerMinute": 168.0,
+      "steps": 3018,
+      "userRoles": [
+        "SCOPE_ATP_READ",
+        "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+        "SCOPE_GCX_KID_WRITE",
+        "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+        "SCOPE_COMMUNITY_COURSE_WRITE",
+        "SCOPE_GCX_KID_ADMIN_READ",
+        "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+        "SCOPE_ACTIVITY_DETECTION_READ",
+        "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+        "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+        "SCOPE_CONNECT_READ",
+        "SCOPE_GCX_PET_READ",
+        "SCOPE_GOLF_API_READ",
+        "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+        "SCOPE_GCX_PET_WRITE",
+        "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+        "SCOPE_DIVE_API_WRITE",
+        "SCOPE_DIVE_API_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_READ",
+        "SCOPE_CONNECT_WRITE",
+        "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+        "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+        "SCOPE_MESSAGE_GENERATION_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+        "SCOPE_GCX_PET_ADMIN_READ",
+        "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+        "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+        "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+        "SCOPE_ATP_WRITE",
+        "SCOPE_GCX_KID_READ",
+        "ROLE_CONNECTUSER",
+        "ROLE_FITNESS_USER",
+        "ROLE_WELLNESS_USER",
+        "ROLE_OUTDOOR_USER",
+        "ROLE_MARINE_USER",
+        "ROLE_DIVE_USER",
+        "ROLE_TACX_APP_USER",
+        "ROLE_GARMIN_USER",
+        "ROLE_GCM_USER"
+      ],
+      "privacy": {
+        "typeId": 2,
+        "typeKey": "private"
+      },
+      "userPro": false,
+      "hasVideo": false,
+      "isPurposeful": false,
+      "timeZoneId": 124,
+      "beginTimestamp": 1791619046000,
+      "sportTypeId": 1,
+      "aerobicTrainingEffect": 1.7000000476837158,
+      "avgStrideLength": 106.30805558569914,
+      "deviceId": 3319086716,
+      "minElevation": 86.60335540771484,
+      "maxElevation": 102.67981719970703,
+      "avgElevation": 94.7155427916211,
+      "maxDoubleCadence": 168.0,
+      "isElevationCorrected": true,
+      "isDecoDive": false,
+      "summarizedDiveInfo": {
+        "summarizedDiveGases": []
+      },
+      "maxVerticalSpeed": 0.38948822021484375,
+      "manufacturer": "GARMIN",
+      "locationName": "Jouy-en-Josas",
+      "lapCount": 4,
+      "endLatitude": 48.76669770106673,
+      "endLongitude": 2.159674298018217,
+      "isAtpActivity": false,
+      "minActivityLapDuration": 78.73200225830078,
+      "splitSummaries": [],
+      "hasSplits": false,
+      "hasIntensityIntervals": false,
+      "isManualActivity": false,
+      "hasHeatMap": false,
+      "fastestSplit_1000": 337.5780029296875,
+      "fastestSplit_1609": 547.5709838867188,
+      "hrTimeInZone_1": 36.931,
+      "hrTimeInZone_2": 1091.121,
+      "hrTimeInZone_3": 27.001,
+      "hrTimeInZone_4": 0.0,
+      "hrTimeInZone_5": 0.0,
+      "endTimeGMT": "2026-10-10 08:16:39",
+      "qualifyingDive": false,
+      "activityUUID": "36e6e572-b9e5-4ff6-9ecb-7aa36b72b25a",
+      "pr": false,
+      "decoDive": false,
+      "purposeful": false,
+      "manualActivity": false,
+      "elevationCorrected": true,
+      "atpActivity": false,
+      "autoCalcCalories": false,
+      "favorite": false,
+      "parent": false
+    }
+  ],
+  "resting_heart_rate": 68
 }
