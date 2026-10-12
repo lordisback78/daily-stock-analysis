@@ -1038,15 +1038,15 @@
       "endTimeGMT": "2026-10-11 08:20:26",
       "qualifyingDive": false,
       "activityUUID": "c3d816cf-92be-42e2-869e-b1b6ed1a19b5",
-      "pr": true,
       "favorite": false,
       "purposeful": false,
+      "pr": true,
+      "parent": false,
+      "decoDive": false,
       "manualActivity": false,
       "autoCalcCalories": false,
       "elevationCorrected": true,
-      "atpActivity": false,
-      "parent": false,
-      "decoDive": false
+      "atpActivity": false
     }
   ],
   "resting_heart_rate": 56
