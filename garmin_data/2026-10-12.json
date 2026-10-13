@@ -41,8 +41,8 @@
     "minHeartRate": null,
     "restingHeartRate": null,
     "lastSevenDaysAvgRestingHeartRate": null,
-    "heartRateValues": null,
-    "heartRateValueDescriptors": null
+    "heartRateValueDescriptors": null,
+    "heartRateValues": null
   },
   "hrv": {},
   "body_battery": [
