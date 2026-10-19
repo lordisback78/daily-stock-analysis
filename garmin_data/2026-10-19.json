@@ -1,0 +1,250 @@
+{
+  "date": "2026-10-19",
+  "errors": {},
+  "sleep": {
+    "dailySleepDTO": {
+      "id": null,
+      "userProfilePK": 86877926,
+      "calendarDate": "2026-10-19",
+      "sleepTimeSeconds": null,
+      "napTimeSeconds": null,
+      "sleepWindowConfirmed": null,
+      "sleepWindowConfirmationType": null,
+      "sleepStartTimestampGMT": null,
+      "sleepEndTimestampGMT": null,
+      "sleepStartTimestampLocal": null,
+      "sleepEndTimestampLocal": null,
+      "autoSleepStartTimestampGMT": null,
+      "autoSleepEndTimestampGMT": null,
+      "sleepQualityTypePK": null,
+      "sleepResultTypePK": null,
+      "unmeasurableSleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "deviceRemCapable": false,
+      "retro": false
+    },
+    "sleepMovement": [],
+    "remSleepData": null,
+    "sleepLevels": []
+  },
+  "heart_rates": {
+    "userProfilePK": 86877926,
+    "calendarDate": "2026-10-19",
+    "startTimestampGMT": "2026-10-19T05:30:00.0",
+    "endTimestampGMT": "2026-10-19T07:57:00.0",
+    "startTimestampLocal": "2026-10-19T00:00:00.0",
+    "endTimestampLocal": "2026-10-20T00:00:00.0",
+    "maxHeartRate": null,
+    "minHeartRate": null,
+    "restingHeartRate": null,
+    "lastSevenDaysAvgRestingHeartRate": null,
+    "heartRateValueDescriptors": null,
+    "heartRateValues": null
+  },
+  "hrv": {},
+  "body_battery": [
+    {
+      "date": "2026-10-19",
+      "charged": null,
+      "drained": null,
+      "startTimestampGMT": "2026-10-19T05:30:00.0",
+      "endTimestampGMT": "2026-10-19T07:57:00.0",
+      "startTimestampLocal": "2026-10-19T00:00:00.0",
+      "endTimestampLocal": "2026-10-19T09:57:00.0",
+      "bodyBatteryValuesArray": [
+        [
+          1792368000001,
+          null
+        ],
+        [
+          1792368000002,
+          null
+        ],
+        [
+          1792368000003,
+          null
+        ],
+        [
+          1792368000004,
+          null
+        ],
+        [
+          1792368000005,
+          null
+        ],
+        [
+          1792368000006,
+          null
+        ]
+      ],
+      "bodyBatteryValueDescriptorDTOList": [
+        {
+          "bodyBatteryValueDescriptorIndex": 0,
+          "bodyBatteryValueDescriptorKey": "timestamp"
+        },
+        {
+          "bodyBatteryValueDescriptorIndex": 1,
+          "bodyBatteryValueDescriptorKey": "bodyBatteryLevel"
+        }
+      ]
+    }
+  ],
+  "stress": {
+    "userProfilePK": 86877926,
+    "calendarDate": "2026-10-19",
+    "startTimestampGMT": "2026-10-19T05:30:00.0",
+    "endTimestampGMT": "2026-10-19T07:57:00.0",
+    "startTimestampLocal": "2026-10-19T00:00:00.0",
+    "endTimestampLocal": "2026-10-19T09:57:00.0",
+    "maxStressLevel": null,
+    "avgStressLevel": null,
+    "stressChartValueOffset": 1,
+    "stressChartYAxisOrigin": -1,
+    "stressValueDescriptorsDTOList": [],
+    "stressValuesArray": []
+  },
+  "training_readiness": [],
+  "activities": [
+    {
+      "activityId": 24775630120,
+      "activityName": "Versailles Course \u00e0 pied",
+      "startTimeLocal": "2026-10-19 08:19:19",
+      "startTimeGMT": "2026-10-19 06:19:19",
+      "activityType": {
+        "typeId": 1,
+        "typeKey": "running",
+        "parentTypeId": 17,
+        "isHidden": false,
+        "restricted": false,
+        "trimmable": true
+      },
+      "eventType": {
+        "typeId": 9,
+        "typeKey": "uncategorized",
+        "sortOrder": 10
+      },
+      "isFavorite": false,
+      "isPR": false,
+      "isAutoCalcCalories": false,
+      "isParent": false,
+      "distance": 8818.9501953125,
+      "duration": 3588.18701171875,
+      "elapsedDuration": 3606.37109375,
+      "movingDuration": 3587.0,
+      "elevationGain": 103.0,
+      "elevationLoss": 101.0,
+      "averageSpeed": 2.4579999446868896,
+      "maxSpeed": 3.2100000381469727,
+      "startLatitude": 48.78565211780369,
+      "startLongitude": 2.127382094040513,
+      "hasPolyline": true,
+      "hasImages": false,
+      "ownerId": 86877926,
+      "ownerDisplayName": "d0619bee-6605-42ab-9b53-58eed098da06",
+      "ownerFullName": "Luc",
+      "ownerProfileImageUrlSmall": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/58175172-8c79-4a46-b02d-d75fb82cba59-86877926.png",
+      "ownerProfileImageUrlMedium": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/9c4ffeb3-e0c9-48e6-a4fa-a1b701a56ac0-86877926.png",
+      "ownerProfileImageUrlLarge": "https://s3.amazonaws.com/garmin-connect-prod/profile_images/daeb9233-1fda-41d4-a040-e71206c67944-86877926.png",
+      "calories": 651.0,
+      "averageRunningCadenceInStepsPerMinute": 156.90625,
+      "maxRunningCadenceInStepsPerMinute": 176.0,
+      "steps": 9344,
+      "userRoles": [
+        "SCOPE_ATP_READ",
+        "SCOPE_COMMUNITY_COURSE_ADMIN_READ",
+        "SCOPE_GCX_KID_WRITE",
+        "SCOPE_DT_ACTIVE_INTELLIGENCE_READ",
+        "SCOPE_COMMUNITY_COURSE_WRITE",
+        "SCOPE_GCX_KID_ADMIN_READ",
+        "SCOPE_CONNECT_WEB_TEMPLATE_RENDER",
+        "SCOPE_ACTIVITY_DETECTION_READ",
+        "SCOPE_OMT_SUBSCRIPTION_ADMIN_READ",
+        "SCOPE_DI_OAUTH_2_MANAGED_STATUS_ADMIN_WRITE",
+        "SCOPE_CONNECT_READ",
+        "SCOPE_GCX_PET_READ",
+        "SCOPE_GOLF_API_READ",
+        "SCOPE_DI_OAUTH_2_DEVICE_REVOCATION_WRITE",
+        "SCOPE_GCX_PET_WRITE",
+        "SCOPE_DI_OAUTH_2_CREATE_DI_USER",
+        "SCOPE_DIVE_API_WRITE",
+        "SCOPE_DIVE_API_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_READ",
+        "SCOPE_CONNECT_WRITE",
+        "SCOPE_CONNECT_MCT_DAILY_LOG_READ",
+        "SCOPE_CONNECT_API_CREATE_UPDATE_USER",
+        "SCOPE_MESSAGE_GENERATION_READ",
+        "SCOPE_DI_OAUTH_2_CLIENT_REVOCATION_ADMIN",
+        "SCOPE_GCX_PET_ADMIN_READ",
+        "SCOPE_CONNECT_NON_SOCIAL_SHARED_READ",
+        "SCOPE_DI_OAUTH_2_PRERELEASE_PERMISSIONS_ADMIN_WRITE",
+        "SCOPE_DI_OAUTH_2_TOKEN_ADMIN",
+        "SCOPE_ATP_WRITE",
+        "SCOPE_GCX_KID_READ",
+        "ROLE_CONNECTUSER",
+        "ROLE_FITNESS_USER",
+        "ROLE_WELLNESS_USER",
+        "ROLE_OUTDOOR_USER",
+        "ROLE_MARINE_USER",
+        "ROLE_DIVE_USER",
+        "ROLE_TACX_APP_USER",
+        "ROLE_GARMIN_USER",
+        "ROLE_GCM_USER"
+      ],
+      "privacy": {
+        "typeId": 2,
+        "typeKey": "private"
+      },
+      "userPro": false,
+      "hasVideo": false,
+      "isPurposeful": false,
+      "timeZoneId": 124,
+      "beginTimestamp": 1792390759000,
+      "sportTypeId": 1,
+      "avgStrideLength": 93.98376251615134,
+      "deviceId": 3932476466,
+      "minTemperature": 13.0,
+      "maxTemperature": 21.0,
+      "minElevation": -133.8000030517578,
+      "maxElevation": -61.599998474121094,
+      "avgElevation": -90.98144871810022,
+      "maxDoubleCadence": 176.0,
+      "isElevationCorrected": false,
+      "isDecoDive": false,
+      "summarizedDiveInfo": {
+        "summarizedDiveGases": []
+      },
+      "maxVerticalSpeed": 1.4000015258789062,
+      "manufacturer": "GARMIN",
+      "locationName": "Versailles",
+      "lapCount": 1,
+      "endLatitude": 48.78882693126798,
+      "endLongitude": 2.124986881390214,
+      "isAtpActivity": false,
+      "minActivityLapDuration": 3588.18701171875,
+      "splitSummaries": [],
+      "hasSplits": false,
+      "hasIntensityIntervals": false,
+      "isManualActivity": false,
+      "hasHeatMap": false,
+      "fastestSplit_1000": 372.39801025390625,
+      "fastestSplit_1609": 604.9140014648438,
+      "fastestSplit_5000": 1952.532958984375,
+      "endTimeGMT": "2026-10-19 07:19:25",
+      "qualifyingDive": false,
+      "activityUUID": "efae824d-5320-453b-bb14-291497bd222d",
+      "pr": false,
+      "favorite": false,
+      "purposeful": false,
+      "parent": false,
+      "manualActivity": false,
+      "decoDive": false,
+      "autoCalcCalories": false,
+      "elevationCorrected": false,
+      "atpActivity": false
+    }
+  ],
+  "resting_heart_rate": null
+}
