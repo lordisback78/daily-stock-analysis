@@ -237,15 +237,15 @@
       "endTimeGMT": "2026-10-27 08:02:46",
       "qualifyingDive": false,
       "activityUUID": "4c172a2d-d3de-4ca5-a0f5-d5717e28e0e3",
-      "parent": false,
-      "autoCalcCalories": false,
-      "elevationCorrected": false,
-      "pr": false,
       "purposeful": false,
       "manualActivity": false,
+      "autoCalcCalories": false,
+      "elevationCorrected": false,
+      "atpActivity": false,
       "favorite": false,
       "decoDive": false,
-      "atpActivity": false
+      "pr": false,
+      "parent": false
     }
   ],
   "resting_heart_rate": null
