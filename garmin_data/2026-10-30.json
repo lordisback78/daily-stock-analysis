@@ -1,0 +1,126 @@
+{
+  "date": "2026-10-30",
+  "errors": {},
+  "sleep": {
+    "dailySleepDTO": {
+      "id": null,
+      "userProfilePK": 86877926,
+      "calendarDate": "2026-10-30",
+      "sleepTimeSeconds": null,
+      "napTimeSeconds": null,
+      "sleepWindowConfirmed": null,
+      "sleepWindowConfirmationType": null,
+      "sleepStartTimestampGMT": null,
+      "sleepEndTimestampGMT": null,
+      "sleepStartTimestampLocal": null,
+      "sleepEndTimestampLocal": null,
+      "autoSleepStartTimestampGMT": null,
+      "autoSleepEndTimestampGMT": null,
+      "sleepQualityTypePK": null,
+      "sleepResultTypePK": null,
+      "unmeasurableSleepSeconds": null,
+      "deepSleepSeconds": null,
+      "lightSleepSeconds": null,
+      "remSleepSeconds": null,
+      "awakeSleepSeconds": null,
+      "deviceRemCapable": false,
+      "retro": false,
+      "sleepFromDevice": null,
+      "averageSpO2Value": null,
+      "lowestSpO2Value": null,
+      "highestSpO2Value": null,
+      "numberOfEventsBelowThreshold": null,
+      "averageSpO2HRSleep": null,
+      "spo2Threshold": null,
+      "averageRespirationValue": null,
+      "lowestRespirationValue": null,
+      "highestRespirationValue": null,
+      "awakeCount": null,
+      "avgSleepStress": null,
+      "ageGroup": null,
+      "avgHeartRate": null,
+      "sleepScorePersonalizedInsight": null,
+      "userNote": null,
+      "kidSleepNote": null,
+      "sleepVersion": null,
+      "sleepNeed": null,
+      "nextSleepNeed": null,
+      "dailyNapDTOS": null,
+      "breathingDisruptionSeverity": null,
+      "sleepAlignment": null
+    },
+    "sleepMovement": [],
+    "remSleepData": null,
+    "sleepLevels": []
+  },
+  "heart_rates": {
+    "userProfilePK": 86877926,
+    "calendarDate": "2026-10-30",
+    "startTimestampGMT": null,
+    "endTimestampGMT": null,
+    "startTimestampLocal": null,
+    "endTimestampLocal": null,
+    "maxHeartRate": null,
+    "minHeartRate": null,
+    "restingHeartRate": null,
+    "lastSevenDaysAvgRestingHeartRate": null,
+    "heartRateValueDescriptors": null,
+    "heartRateValues": null
+  },
+  "hrv": {},
+  "body_battery": [
+    {
+      "date": "2026-10-30",
+      "charged": null,
+      "drained": null,
+      "startTimestampGMT": null,
+      "endTimestampGMT": null,
+      "startTimestampLocal": null,
+      "endTimestampLocal": null,
+      "bodyBatteryValuesArray": [
+        [
+          1793318400001,
+          null
+        ],
+        [
+          1793318400002,
+          null
+        ],
+        [
+          1793318400003,
+          null
+        ],
+        [
+          1793318400004,
+          null
+        ],
+        [
+          1793318400005,
+          null
+        ],
+        [
+          1793318400006,
+          null
+        ]
+      ],
+      "bodyBatteryValueDescriptorDTOList": null
+    }
+  ],
+  "stress": {
+    "userProfilePK": 86877926,
+    "calendarDate": "2026-10-30",
+    "startTimestampGMT": null,
+    "endTimestampGMT": null,
+    "startTimestampLocal": null,
+    "endTimestampLocal": null,
+    "maxStressLevel": null,
+    "avgStressLevel": null,
+    "stressChartValueOffset": null,
+    "stressChartYAxisOrigin": null,
+    "stressValueDescriptorsDTOList": [],
+    "stressValuesArray": []
+  },
+  "training_readiness": [],
+  "activities": [],
+  "resting_heart_rate": null
+}
